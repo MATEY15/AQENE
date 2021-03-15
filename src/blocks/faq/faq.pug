@@ -1,0 +1,25 @@
+.faq
+    .container
+        .row
+            .col-lg-5
+                .faq__heading
+                    p.sub-title How can we help?
+                    h3.section-title Frequently asked questions
+                ul.faq__list
+                    li.faq__list-item.faq__list-item--active
+                        | Patients
+                        .faq__list-icon
+                    li.faq__list-item
+                        | HCPs
+                        .faq__list-icon
+
+            .col-lg-7
+                .faq__wrapper
+                    .faq__tabs
+                        include ../accordion/accordion
+                        .faq__button
+                            a(href="#").link-black View all questions
+                    .faq__tabs
+                        include ../accordion/accordion
+                        .faq__button
+                            a(href="#").link-black View all questions

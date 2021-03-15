@@ -1,0 +1,103 @@
+extends ../templates/main
+
+block variables
+    - var title = 'AQENE'
+
+
+block content
+    main.main.main--default-offset
+
+        .breadcrumbs
+            .container
+                ul.breadcrumbs__list
+                    +listBreadcrumbs("Home")
+                    +listBreadcrumbs("Resources", true)
+
+        .content-main
+            .container
+                h1.title-page Resources & News from the AQENE
+
+                .post-preview
+                    .post-preview__image
+                        img(src="src/blocks/resources/assets/img/resources1.jpg")
+
+                    .post-preview__post
+                        .post-preview__post-date 07.07.2020
+                        .post-preview__post-content
+                            .post-preview__post-name
+                                a(href="") Not feeling well? #[br]Have a health concern? Need a prescription filled?
+                            .post-preview__post-desc
+                                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas lorem. Integer consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                p Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas lorem. Integer consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas lorem. Integer consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+        .latest-news.latest-news--default-offset
+            .container
+                .row
+                    .latest-news__heading
+                        h3.section-title Latest News
+                        a(href="#").link-black View all
+                    .latest-news__slider
+                        .latest-news__item
+                            .latest-news__item-slide
+                                .latest-news__date 07.07.2020
+                                .latest-news__title
+                                    a(href="#") Not feeling well? Have a health concern? Need a prescription filled?
+                                a(href="#").latest-news__image
+                                    img(src="src/blocks/latest-news/assets/img/latest-news1.jpg")
+                        .latest-news__item
+                            .latest-news__item-slide
+                                .latest-news__date 07.07.2020
+                                .latest-news__title
+                                    a(href="#") Not feeling well? Have a health concern? Need a prescription filled?
+                                a(href="#").latest-news__image
+                                    img(src="src/blocks/latest-news/assets/img/latest-news2.jpg")
+                        .latest-news__item
+                            .latest-news__item-slide
+                                .latest-news__date 07.07.2020
+                                .latest-news__title
+                                    a(href="#") Not feeling well? Have a health concern? Need a prescription filled?
+                                a(href="#").latest-news__image
+                                    img(src="src/blocks/latest-news/assets/img/latest-news3.jpg")
+                        .latest-news__item
+                            .latest-news__item-slide
+                                .latest-news__date 07.07.2020
+                                .latest-news__title
+                                    a(href="#") Not feeling well? Have a health concern? Need a prescription filled?
+                                a(href="#").latest-news__image
+                                    img(src="src/blocks/latest-news/assets/img/latest-news4.jpg")
+                        .latest-news__item
+                            .latest-news__item-slide
+                                .latest-news__date 07.07.2020
+                                .latest-news__title
+                                    a(href="#") Not feeling well? Have a health concern? Need a prescription filled?
+                                a(href="#").latest-news__image
+                                    img(src="src/blocks/latest-news/assets/img/latest-news1.jpg")
+                        .latest-news__item
+                            .latest-news__item-slide
+                                .latest-news__date 07.07.2020
+                                .latest-news__title
+                                    a(href="#") Not feeling well? Have a health concern? Need a prescription filled?
+                                a(href="#").latest-news__image
+                                    img(src="src/blocks/latest-news/assets/img/latest-news2.jpg")
+                    .latest-news__navigate
+
+        .videos.videos--default-offset
+            .container
+                .heading__name-view
+                    h3.section-title Videos
+                    a(href="#").link-black View all
+                .row
+                    .col-lg-6
+                        .videos__item
+                            a(href="http://www.youtube.com/watch?v=0O2aH4XLbto").videos__item-video.popup-youtube
+                                img(src="src/blocks/videos/assets/img/videos1.jpg").videos__item-video-image
+                                i.video-play.video-play--position-center
+
+                    .col-lg-6
+                        .videos__item
+                            a(href="http://www.youtube.com/watch?v=0O2aH4XLbto").videos__item-video.popup-youtube
+                                img(src="src/blocks/videos/assets/img/videos2.jpg").videos__item-video-image
+                                i.video-play.video-play--position-center
+
+        include ../blocks/faq/faq
+        include ../blocks/documents/documents

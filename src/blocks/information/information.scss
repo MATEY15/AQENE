@@ -1,0 +1,356 @@
+@import "../../libs/scss/mixins";
+@import "../../blocks/base/variables";
+@import "../../blocks/base/media-queries";
+
+
+$informationMain: '.information';
+
+.information {
+  padding: 30px 0 0;
+
+  @include table-large-screen {
+    overflow: hidden;
+  }
+
+  &__background {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 65px;
+    padding-left: 0;
+
+    @include table-large-screen {
+      padding-right: 0;
+      justify-content: flex-start;
+      margin-bottom: 70px;
+    }
+
+    &:before {
+      position: absolute;
+      right: 0;
+      top: 0;
+      content: '';
+      width: 10000px;
+      height: calc(100% - 54px);
+      border-radius: 10px;
+
+      @include table-large-screen {
+        right: -50%;
+      }
+    }
+
+  }
+
+  &__background--right {
+    padding-right: 0;
+    padding-left: 65px;
+
+    @include table-large-screen {
+      padding-left: 0;
+    }
+
+    &:before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      content: '';
+      width: 10000px;
+      //height: calc(100% - 54px);
+      height: 100%;
+      border-radius: 10px;
+
+      @include table-large-screen {
+        left: -50%;
+      }
+    }
+  }
+
+  &__image-container {
+
+    &--default-offset {
+      @include margin-bottom(40px, 100px, 480px, 1400px);
+    }
+
+    #{$informationMain} {
+      &__background {
+        justify-content: flex-start;
+      }
+    }
+
+    #{$informationMain} {
+      &__background--right {
+        justify-content: flex-end;
+      }
+    }
+  }
+
+  &__background--beige {
+    &:before {
+      background: #FFF7F6;
+    }
+  }
+
+  &__background--blue {
+    &:before {
+      background: #F7F8FF;
+    }
+  }
+
+  &__background--full-img {
+    justify-content: flex-end;
+  }
+
+  &__image {
+    position: relative;
+    @include laptop-big-screen {
+      max-width: 100%;
+    }
+    @include table-large-screen {
+      width: auto;
+    }
+    @include mobile-large-screen {
+      width: 100%;
+      max-width: 97%;
+    }
+  }
+
+  &__image--full {
+    @include laptop-large-screen {
+      width: 45vw;
+    }
+    @include table-large-screen {
+      width: auto;
+    }
+  }
+
+  &__image--top {
+    margin-top: 45px;
+  }
+
+  &__image--bottom {
+    top: -45px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #153257;
+    height: 100%;
+    max-width: 570px;
+    margin-left: 110px;
+    padding: 0 15px;
+    @include laptop-large-screen {
+      margin-left: 45px;
+    }
+    @include laptop-small-screen {
+      margin-left: 20px;
+    }
+    @include table-large-screen {
+      margin-left: 0;
+    }
+
+    &--right {
+      margin-left: auto;
+      margin-right: 110px;
+      @include laptop-large-screen {
+        margin-right: 45px;
+        margin-left: 0;
+      }
+      @include laptop-small-screen {
+        margin-right: 20px;
+      }
+      @include table-large-screen {
+        margin-right: 0;
+        padding: 0 15px;
+      }
+    }
+  }
+
+  &__content-title {
+    @include fb();
+    @include font-size(38px, 50px, 480px, 1800px);
+    @include line-height(42px, 56px, 480px, 1800px);
+    color: #153257;
+    margin-bottom: 20px;
+    &--big {
+      @include font-size(38px, 60px, 480px, 1800px);
+      @include line-height(42px, 64px, 480px, 1800px);
+      margin-bottom: 40px;
+    }
+  }
+
+  &__content-subtitle {
+    font-size: 20px;
+    line-height: 28px;
+    @include fm();
+    margin-bottom: 8px;
+  }
+
+  &__content-text {
+    @include fr();
+    font-size: 16px;
+    line-height: 24px;
+    color: #153257;
+
+    p {
+      margin-bottom: 8px;
+    }
+  }
+
+  &__button {
+    margin-top: 30px;
+    @include mobile-small-screen {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .button {
+      @include mobile-small-screen {
+        width: 100%;
+      }
+    }
+
+    a:not(:last-child) {
+      margin-right: 36px;
+      @include mobile-small-screen {
+        margin-right: 0;
+      }
+    }
+
+    &--offset {
+      padding: 0 25px;
+    }
+  }
+
+  // ===========
+
+  &-content {
+    color: #153257;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    max-width: 570px;
+    margin-left: 125px;
+    padding: 0 15px;
+    @include laptop-large-screen {
+      margin-left: 60px;
+    }
+    @include laptop-small-screen {
+      margin-left: 20px;
+    }
+    @include table-large-screen {
+      margin-left: 0;
+    }
+
+    &--right {
+      margin-left: auto;
+      margin-right: 125px;
+      @include laptop-large-screen {
+        margin-right: 60px;
+        margin-left: 0;
+      }
+      @include laptop-small-screen {
+        margin-right: 20px;
+      }
+      @include table-large-screen {
+        margin-right: 0;
+        padding: 0 15px;
+      }
+    }
+  }
+
+
+  &-content__heading {
+    margin-bottom: 20px;
+  }
+
+  &-content__heading h3 {
+    @include fb();
+    //font-weight: normal;
+    font-size: 50px;
+    line-height: 56px;
+    color: #153257;
+  }
+
+  &-content__text,
+  &-content__text p {
+    @include fr();
+    font-size: 16px;
+    line-height: 24px;
+    color: #153257;
+  }
+
+  &-content__text p {
+    margin-bottom: 8px;
+  }
+
+  &-heading {
+    margin-bottom: 40px;
+
+    .sub-title {
+      margin-bottom: 20px;
+    }
+  }
+
+  // ====
+
+  &__list {
+    max-width: 435px;
+  }
+
+  &__list-items {
+    position: relative;
+    padding-left: 25px;
+
+    &:not(:last-child) {
+      margin-bottom: 35px;
+    }
+
+    &:before {
+      position: absolute;
+      left: 0;
+      top: 10px;
+      content: '';
+      width: 10px;
+      height: 10px;
+      border: 2px solid #F1E5E2;
+      border-radius: 2px;
+    }
+
+    p {
+      @include fb();
+      font-size: 20px;
+      line-height: 28px;
+      margin-bottom: 8px;
+    }
+
+    span {
+      @include fr();
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  &-button {
+    margin-top: 30px;
+    padding: 0 25px;
+    @include laptop-small-screen {
+      margin-top: 15px;
+      padding: 0;
+    }
+
+    a {
+      margin-top: 20px;
+    }
+
+    a:not(:last-child) {
+      margin-right: 36px;
+      @include laptop-small-screen {
+        margin-right: 24px;
+      }
+    }
+  }
+
+}

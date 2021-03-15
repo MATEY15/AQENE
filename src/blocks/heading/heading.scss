@@ -1,0 +1,69 @@
+@import "../../libs/scss/mixins";
+@import "../../blocks/base/variables";
+@import "../../blocks/base/media-queries";
+
+.heading__name-view {
+  display: flex;
+  align-items: flex-end;
+  @include margin-bottom(20px, 40px, 480px, 1800px);
+
+  .link-black {
+    margin-left: 25px;
+    margin-bottom: 8px;
+  }
+}
+
+.sub-title {
+  @include fb();
+  font-size: 14px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #4637A5;
+  margin-bottom: 20px;
+}
+
+.section-title {
+  @include fb();
+  @include font-size(38px, 60px, 480px, 1800px);
+  @include line-height(42px, 64px, 480px, 1800px);
+  color: #153257;
+}
+
+.title-small {
+  @include fb();
+  @include font-size(30px, 44px, 480px, 1800px);
+  @include line-height(34px, 50px, 480px, 1800px);
+  //font-size: 44px;
+  //line-height: 50px;
+  color: #153257;
+
+  &--default-offset {
+    margin-bottom: 50px;
+  }
+  &--center {
+    text-align: center;
+  }
+}
+
+.title-page {
+  @include fb();
+  @include font-size(38px, 60px, 480px, 1800px);
+  @include line-height(42px, 66px, 480px, 1800px);
+  color: #153257;
+}
+
+.title-inside {
+  &--position-center {
+    text-align: center;
+  }
+  &--bottom-offset {
+    margin-bottom: 50px;
+  }
+  h1, h2, h3 {
+    @include fm();
+    font-size: 44px;
+    line-height: 50px;
+    color: #153257;
+
+  }
+}

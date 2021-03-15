@@ -1,0 +1,197 @@
+extends ../templates/main
+
+block variables
+    - var title = 'AQENE'
+
+
+block content
+    main.main
+        .header-banner
+            .header-banner__background
+                .container.header-banner__container
+                    .background-dot
+                    .background-gradient
+                .container.header-banner__background-buttom
+                    .background-dot--black
+            .container.header-banner__container
+                .row
+                    .col-md-6.col-sm-12.header-banner__content
+                        h1.header-banner__title Our Patients
+                        p.header-banner__desc Get matched to a therapist and instantly connect with Canadian counselors for your mental care from your phone, tablet or computer - any time, 24/7.
+                        .header-banner__button
+                            a(href="#").button.button__yellow
+                                img(src="src/blocks/button/assets/img/button-img-1.svg").button__yellow--icon-left
+                                | Individual
+                            a(href="#").button.button__yellow
+                                img(src="src/blocks/button/assets/img/button-img-2.svg").button__yellow--icon-left
+                                | Couples
+                            a(href="#").button.button__yellow
+                                img(src="src/blocks/button/assets/img/button-img-3.svg").button__yellow--icon-left
+                                | Teen
+
+                    .col-md-6.col-sm-12.header-banner__image-wrapper
+                        img(src="src/blocks/header-banner/assets/img/header-banner-6.png").header-banner__image
+
+        .about.about--inside-offset
+            .container
+                .about-background
+                    .background-plus
+                .row
+                    .heading
+                        p.sub-title About Us
+                        //h3.section-title About Us
+                    .col-lg-4
+                        .about__content.about__content--strong
+                            p Guided digital therapy with us is highly personalized to what you're feeling and who you are, as a whole person.
+
+                    .col-lg-8
+                        .about__content
+                            p Through secure digital messaging, and tailored readings and activities, you’ll work 1-to-1 with a registered therapist. Your therapist is focused on your improvement and will support you all along the way.
+                            a(href="#").link-black Learn more about AQENE
+
+        include ../blocks/benefits/benefits
+
+        .information
+            .information__image-container.information__image-container--default-offset
+                .row
+                    .col-lg-6
+                        .information__background.information__background--full-img.information__background--blue
+                            +testimonialBox('testimonial--absolute testimonial--top testimonial--position-el5', "src/blocks/testimonial/assets/img/testimonial-author4.jpg")
+                            img(src="src/blocks/information/assets/img/information-image-5.png").information__image.information__image--white.information__image--full.information__image--top
+                    .col-lg-6
+                        .information__content
+                            .information__content-heading
+                                h3.information__content-title We help individually
+                                p.information__content-subtitle Mental health
+                            .information__content-text
+                                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas lorem. Integer consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas lorem. Integer consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                p Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas lorem. Integer consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas lorem. Integer consequat.
+                                p Id egest egestas lorem.Integer consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim facilisis sodales. Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas lorem.
+
+                            .information__button
+                                a(href="#").button.button__green-gradient Book Consultation
+                                a(href="#").link-black Therapists directory
+
+            .information__image-container.information__image-container--default-offset
+                .row
+                    .col-lg-6.order-1.order-lg-0
+                        .information__content.information-content--right
+                            .information__content-heading
+                                h3.information__content-title We help couples
+                                p.information__content-subtitle Mental health
+                            .information__content-text
+                                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas lorem. Integer consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas lorem. Integer consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                p Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas lorem. Integer consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas lorem. Integer consequat. Id egest egestas lorem.Integer consequat.
+                                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas lorem. Integer consequat.
+
+                            .information__button
+                                a(href="#").button.button__green-gradient Book Consultation
+                                a(href="#").link-black Therapists directory
+
+                    .col-lg-6.order-0.order-lg-1
+                        .information__background.information__background--right.information__background--full-img.information__background--beige
+                            +testimonialBox('testimonial--absolute testimonial--top testimonial--position-el6', "src/blocks/testimonial/assets/img/testimonial-author5.jpg")
+                            img(src="src/blocks/information/assets/img/information-image-6.png").information__image.information__image--white.information__image--full.information__image--bottom
+
+            .information__image-container.information__image-container--default-offset
+                .row
+                    .col-lg-6
+                        .information__background.information__background--full-img.information__background--blue
+                            +testimonialBox('testimonial--absolute testimonial--top testimonial--position-el7', "src/blocks/testimonial/assets/img/testimonial-author6.jpg")
+                            img(src="src/blocks/information/assets/img/information-image-7.png").information__image.information__image--white.information__image--full.information__image--top
+                    .col-lg-6
+                        .information__content
+                            .information__content-heading
+                                h3.information__content-title We help teens
+                                p.information__content-subtitle Mental health
+                            .information__content-text
+                                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas lorem. Integer consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas lorem. Integer consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                p Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas lorem. Integer consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas lorem. Integer consequat.
+                                p Id egest egestas lorem.Integer consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim facilisis sodales. Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas lorem.
+
+                            .information__button
+                                a(href="#").button.button__green-gradient Book Consultation
+                                a(href="#").link-black Therapists directory
+
+        .virtual-process.virtual-process--custome-offset
+
+            .virtual-process__wrapper
+                .container
+                    .row
+                        .virtual-process__head
+                            .virtual-process__heading
+                                p.sub-title Virtual Counselling Process
+                                h3.section-title Quite Simple!
+                            .virtual-slider__navigate
+                .virtual-process__line.virtual-process__line-slider(style="background: url(src/blocks/virtual-process/assets/img/virtual-process-line.svg);")
+                    .container
+                        .row
+                            .col-4
+                                .virtual-process__line-item.virtual-process__line-item--el-1
+                                    .virtual-process__line-icon
+                                        img(src="src/blocks/virtual-process/assets/img/virtual-process-1.svg")
+                            .col-4
+                                .virtual-process__line-item.virtual-process__line-item--el-2
+                                    .virtual-process__line-icon
+                                        img(src="src/blocks/virtual-process/assets/img/virtual-process-2.svg")
+                            .col-4
+                                .virtual-process__line-item.virtual-process__line-item--el-3
+                                    .virtual-process__line-icon
+                                        img(src="src/blocks/virtual-process/assets/img/virtual-process-3.svg")
+                .container
+                    .row
+                        .virtual-slider
+                            .virtual-slider__item
+                                +virtualSliderElement("Book a Consultation", "src/blocks/virtual-process/assets/img/virtual-slider1.jpg")
+                            .virtual-slider__item
+                                +virtualSliderElement("Book a Consultation", "src/blocks/virtual-process/assets/img/virtual-slider1.jpg")
+                            .virtual-slider__item
+                                +virtualSliderElement("Book a Consultation", "src/blocks/virtual-process/assets/img/virtual-slider1.jpg")
+                            .virtual-slider__item
+                                +virtualSliderElement("Book a Consultation", "src/blocks/virtual-process/assets/img/virtual-slider1.jpg")
+                            .virtual-slider__item
+                                +virtualSliderElement("Book a Consultation", "src/blocks/virtual-process/assets/img/virtual-slider1.jpg")
+                            .virtual-slider__item
+                                +virtualSliderElement("Book a Consultation", "src/blocks/virtual-process/assets/img/virtual-slider1.jpg")
+                            .virtual-slider__item
+                                +virtualSliderElement("Book a Consultation", "src/blocks/virtual-process/assets/img/virtual-slider1.jpg")
+                            .virtual-slider__item
+                                +virtualSliderElement("Book a Consultation", "src/blocks/virtual-process/assets/img/virtual-slider1.jpg")
+                            .virtual-slider__item
+                                +virtualSliderElement("Book a Consultation", "src/blocks/virtual-process/assets/img/virtual-slider1.jpg")
+                            .virtual-slider__item
+                                +virtualSliderElement("Book a Consultation", "src/blocks/virtual-process/assets/img/virtual-slider1.jpg")
+                            .virtual-slider__item
+                                +virtualSliderElement("Book a Consultation", "src/blocks/virtual-process/assets/img/virtual-slider1.jpg")
+                            .virtual-slider__item
+                                +virtualSliderElement("Book a Consultation", "src/blocks/virtual-process/assets/img/virtual-slider1.jpg")
+
+        include ../blocks/patients-stories/patients-stories
+
+        include ../blocks/counseling/counseling
+        .faq.faq--bottom-offset
+            .container
+                .row
+                    .col-lg-5
+                        .faq__heading
+                            p.sub-title How can we help?
+                            h3.section-title Frequently asked questions
+                        ul.faq__list
+                            li.faq__list-item.faq__list-item--active
+                                | Patients
+                                .faq__list-icon
+                            li.faq__list-item
+                                | HCPs
+                                .faq__list-icon
+
+                    .col-lg-7
+                        .faq__wrapper
+                            .faq__tabs
+                                include ../blocks/accordion/accordion
+                                .faq__button
+                                    a(href="#").link-black View all questions
+                            .faq__tabs
+                                include ../blocks/accordion/accordion
+                                .faq__button
+                                    a(href="#").link-black View all questions
+        include ../blocks/latest-news/latest-news

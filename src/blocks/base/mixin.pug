@@ -1,0 +1,160 @@
+mixin item(title, url)
+    li
+        a(href=url, class=active == title ? 'active' : '')= title
+
+mixin iconSvg(w, h, wp, id)
+    svg(width=w height=h viewBox=wp class=id)
+        use(xlink:href="/images/icons/sprites.svg#"+id)
+
+mixin iconSvgSocial(w, h, wp, id)
+    svg(width=w height=h viewBox=wp class=id)
+        use(xlink:href="/src/blocks/social-link/assets/img/social-sprites.svg#" + id)
+
+// Header block
+mixin headerBlock()
+    .header-banner
+        .header-banner__background
+            .container.header-banner__container
+                .background-dot
+                .background-gradient
+        .container.header-banner__container
+            .row
+                .col-md-6.col-sm-12.header-banner__content
+                    h1.header-banner__title Effective, affordable mental care within minutes
+                    p.header-banner__desc Get matched to a therapist and instantly connect with Canadian counselors for your mental care from your phone, tablet or computer - any time, 24/7.
+                    .header-banner__button
+                        a(href="#").button.button__yellow
+                            img(src="src/blocks/button/assets/img/button-img-1.svg").button__yellow--icon-left
+                            | Individual
+                        a(href="#").button.button__yellow
+                            img(src="src/blocks/button/assets/img/button-img-2.svg").button__yellow--icon-left
+                            | Couples
+                        a(href="#").button.button__yellow
+                            img(src="src/blocks/button/assets/img/button-img-3.svg").button__yellow--icon-left
+                            | Teen
+                .col-md-6.col-sm-12.header-banner__image-wrapper
+                    img(src="src/blocks/header-banner/assets/img/header-banner-1.png").header-banner__image
+
+
+mixin tableLine(name, check1, check2)
+    .counseling__table-line
+        .counseling__table-items= name
+        .counseling__table-items.counseling__table-items--active
+            if check1=='true'
+                i.check-icon
+                    +iconSvg('20', '20', '0 0 20 20', 'icon-check')
+            else
+                i.icon-check.check-icon__false
+        .counseling__table-items.counseling__table-items--inactive
+            if check2=='true'
+                i.check-icon
+                    +iconSvg('20', '20', '0 0 20 20', 'icon-check')
+            else
+                i.icon-check.check-icon__false
+
+mixin accordion(title, desc)
+    .accordion__item
+        .accordion__title= title
+            i.accordion__title-icon.
+                <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.41 0.589965L6 5.16997L10.59 0.589966L12 1.99997L6 7.99997L-6.16331e-08 1.99997L1.41 0.589965Z"/>
+                </svg>
+        .accordion__description
+            p= desc
+
+mixin testimonial(addClass)
+    //.testimonial(style="top:"+top+"; left: "+left+";")
+    .testimonial(class=addClass)
+        .testimonial__author
+            img(src="src/blocks/testimonial/assets/img/testimonial-author1.jpg").testimonial__author-image
+        .testimonial__message
+            .testimonial__rating
+                include ../rating/rating
+            p.testimonial__desc “Ut dignissim facilisis sodales. Integer vehicula nulla felis facilisis sodales. Integer vehic, id egest egestas lorem”
+            .testimonial__name John Doe, Toronto
+
+mixin testimonialTop(addClass, image)
+    //.testimonial.testimonial--top(style="top:"+top+"; left: "+left+";")
+    .testimonial.testimonial--top(class=addClass)
+        .testimonial__author
+            img(src= image).testimonial__author-image
+        .testimonial__message
+            .testimonial__rating
+                include ../rating/rating
+            p.testimonial__desc “Ut dignissim facilisis sodales. Integer vehicula nulla felis facilisis sodales. Integer vehic, id egest egestas lorem”
+            .testimonial__name John Doe, Toronto
+
+mixin testimonialBottom(addClass, image)
+    .testimonial(class=addClass)
+        .testimonial__author
+            img(src=image).testimonial__author-image
+        .testimonial__message
+            .testimonial__rating
+                include ../rating/rating
+            p.testimonial__desc “Ut dignissim facilisis sodales. Integer vehicula nulla felis facilisis sodales. Integer vehic, id egest egestas lorem”
+            .testimonial__name John Doe, Toronto
+
+mixin testimonialRightBottom(addClass, image)
+    .testimonial.testimonial--right.testimonial--bottom(class=addClass)
+        .testimonial__message
+            .testimonial__rating
+                include ../rating/rating
+            p.testimonial__desc “Ut dignissim facilisis sodales. Integer vehicula nulla felis facilisis sodales. Integer vehic, id egest egestas lorem”
+            .testimonial__name John Doe, Toronto
+        .testimonial__author
+            img(src=image).testimonial__author-image
+
+mixin testimonialBox(addClass, image)
+    .testimonial(class=addClass)
+        .testimonial__author
+            img(src=image).testimonial__author-image
+        .testimonial__message
+            .testimonial__rating
+                include ../rating/rating
+            p.testimonial__desc “Ut dignissim facilisis sodales. Integer vehicula nulla felis facilisis sodales. Integer vehic, id egest egestas lorem”
+            .testimonial__name John Doe, Toronto
+
+
+mixin areYou(title1, title2, link, addClass)
+    .are-you(class=addClass)
+        .container
+            .are-you__wrapper
+                .are-you__start= title1
+                .are-you__arrrow
+                    img(src="src/blocks/are-you/assets/img/are-you__arrow.svg")
+                .are-you__end= title2
+            .are-you__button
+                a(href="#").link-black= link
+
+
+
+mixin virtualSliderElement(name, image)
+    .virtual-slider__element
+        .virtual-slider__item-content
+            .virtual-slider__count 1
+            h3= name
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas lorem. Integer consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas lorem. Integer consequat.
+            .virtual-slider__button-container
+                a(href="#").button.button--border-green Book Consultation
+        .virtual-slider__item-image
+            img(src=image)
+
+// Breadcrumbs
+mixin listBreadcrumbs(name, spanTag)
+    if spanTag == true
+        li
+            span= name
+    else
+        li
+            a(href="#")= name
+
+
+// Posts
+
+mixin posts(image)
+    .posts-card.posts-card__bottmo-offset
+        .posts-card__date 07.07.2020
+        .posts-card__title
+            a(href="#") Not feeling well? Have a health concern? Need a prescription filled?
+        a(href="#").posts-card__image
+            img(src=image)

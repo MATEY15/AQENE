@@ -1,0 +1,69 @@
+extends ../templates/main
+
+block variables
+    - var title = 'AQENE'
+
+
+block content
+    main.main.main--default-offset
+
+        .page-wrapper.page-wrapper--default-offset
+
+            .title-inside.title-inside--bottom-offset.title-inside--position-center
+                h1 Onboarding Questionnaire
+
+            .box-form.box-form--position-center.form-step
+                .form-step__indicators
+                .form-step__step-number Step #[span.form-step__step-counter 1/6]
+                .form-step__items
+                    .form-step__item.form-step__item--active
+                        .box-form__head.box-form__head--text-center
+                            h3 1. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex?
+                        .box-form__inside
+                            label.radio-button.radio-button--full-style
+                                input.radio-button__input(type="radio" name="radio" checked="checked")
+                                .radio-button__text
+                                    .radio-button__status
+                                    p Option 1. Lorem ipsum dolor sit amet, consectetur adipicing.
+                            label.radio-button.radio-button--full-style
+                                input.radio-button__input(type="radio" name="radio" )
+                                .radio-button__text
+                                    .radio-button__status
+                                    p Option 2. Lorem ipsum dolor sit amet, consectetur adipicing.
+                            label.radio-button.radio-button--full-style
+                                input.radio-button__input(type="radio" name="radio" )
+                                .radio-button__text
+                                    .radio-button__status
+                                    p Option 3. Lorem ipsum dolor sit amet, consectetur adipicing.
+                    .form-step__item
+                        .box-form__head.box-form__head--text-center
+                            h3 2. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex?
+                    .form-step__item
+                        .box-form__head.box-form__head--text-center
+                            h3 3. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex?
+                    .form-step__item
+                        .box-form__head.box-form__head--text-center
+                            h3 4. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex?
+                    .form-step__item
+                        .box-form__head.box-form__head--text-center
+                            h3 5. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex?
+                    .form-step__item
+                        .box-form__head.box-form__head--text-center
+                            h3 6. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex?
+                .form-step__navigate.form-step__navigate--default-offset
+                    button#form-step__prev.form-step__button.form-step__button--prev Go back
+                    button#form-step__next.form-step__button.form-step__button--next.form-step__button--change Next
+
+
+        .page-wrapper.page-wrapper--default-offset
+
+            .title-inside.title-inside--bottom-offset.title-inside--position-center
+                h1 Onboarding Questionnaire
+
+            .box-form.box-form--default-offset.box-form--position-center
+                .box-form__content.box-form__content--center
+                    .box-form__head.box-form__head--text-center
+                        h3 Thank you message
+                    p Ut dignissim facil isis sodales. Integer vehicula nulla felis, id egest egestas loremonsec tetur adipiscing. Integer consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elitInteger vehicula nulla felis.
+                    .box-form__button
+                        a(href="").button.button--border-green.button--color-black.button--arrow-right Register an account

@@ -1,0 +1,88 @@
+extends ../templates/main
+
+block variables
+    - var title = 'AQENE'
+
+
+block content
+    main.main.main--default-offset
+
+        .page-wrapper.page-wrapper--default-offset
+
+            .title-inside.title-inside--bottom-offset.title-inside--position-center
+                h1 January 22
+
+            .bookings
+                .container
+                    .bookings__book
+                        .bookings__book-contents
+                            p Book session with Dr. Jane Doe
+                            p 30 minutes
+                        i.icon-info
+                            +iconSvg('26px', '26px', '0 0 26 26', 'icon-info')
+                    .row
+                        .col-lg-6
+                            .calendar
+                                table#calendar
+                                    thead
+                                        tr
+                                            td(colspan="2")
+                                                span.month-button.month-button--prev.
+                                                    <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.589966 10.59L5.16997 6L0.589966 1.41L1.99997 0L7.99997 6L1.99997 12L0.589966 10.59Z" fill="#3A3FB0"/></svg>
+                                                span.month-button.month-button--next.
+                                                    <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.589966 10.59L5.16997 6L0.589966 1.41L1.99997 0L7.99997 6L1.99997 12L0.589966 10.59Z" fill="#3A3FB0"/></svg>
+                                            td(colspan="5" align="left")
+                                        tr
+                                            td Su
+                                            td Mo
+                                            td Tu
+                                            td We
+                                            td Th
+                                            td Fr
+                                            td Sa
+                                    tbody
+                        .col-lg-6
+                            .select-option__main
+                                .select-option__title
+                                    h3 Select staff (optional)
+                                .box-form__main.box-form__main--flex-position
+                                    .box-form__items
+                                        select.select-main
+                                            option Dr. Jane Doe
+                                            option Dr. Jane Doe 1
+                                            option Dr. Jane Doe 2
+                                            option Dr. Jane Doe 3
+                                    .box-form__items.col-4
+                                        label.radio-item
+                                            input.radio-item__input(type="radio" name="radio" checked="checked" required="")
+                                            .radio-item__status
+                                                p 2:00 pm
+                                    .box-form__items.col-4
+                                        label.radio-item
+                                            input.radio-item__input(type="radio" name="radio" required="")
+                                            .radio-item__status
+                                                p 2:00 pm
+                                    .box-form__items.col-4
+                                        label.radio-item
+                                            input.radio-item__input(type="radio" name="radio" checked="checked" required="")
+                                            .radio-item__status
+                                                p 2:00 pm
+                                    .box-form__items.col-4
+                                        label.radio-item
+                                            input.radio-item__input(type="radio" name="radio" required="")
+                                            .radio-item__status
+                                                p 2:00 pm
+                                    .box-form__items.col-4
+                                        label.radio-item
+                                            input.radio-item__input(type="radio" name="radio" checked="checked" required="")
+                                            .radio-item__status
+                                                p 2:00 pm
+                                    .box-form__items.col-4
+                                        label.radio-item
+                                            input.radio-item__input(type="radio" name="radio" required="")
+                                            .radio-item__status
+                                                p 2:00 pm
+
+                                .form-step__navigate
+                                    button.form-step__button.form-step__button--prev Go back
+                                    button.form-step__button.form-step__button--next.form-step__button--change Continue

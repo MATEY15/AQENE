@@ -1,0 +1,37 @@
+extends ../templates/main
+
+block variables
+    - var title = 'AQENE'
+
+
+block content
+    main.main
+
+        include ../blocks/header-banner/header-banner
+        .preview-wrapper
+            .container
+                ul.list-preview
+                    +item('Home', 'home.html')
+                    +item('Therapists', 'therapists.html')
+                    +item('Work With Us', 'work-with-us.html')
+                    +item('Directory', 'directory.html')
+                    +item('Profile', 'profile.html')
+                    +item('Patients', 'patients.html')
+                    +item('About', 'about.html')
+                    +item('Requirements', 'requirements.html')
+                    +item('Contact', 'contact.html')
+                    +item('Resources', 'resources.html')
+                    +item('Blog', 'blog.html')
+                    +item('Post', 'post.html')
+                    +item('Topics', 'topics.html')
+                    +item('Faq', 'faq.html')
+                    +item('Testimonials', 'testimonials.html')
+                    +item('Onboarding Questionnaire', 'onboarding-questionnaire.html')
+                    +item('Registration', 'registration.html')
+                    +item('Select Option', 'select-option.html')
+                    +item('Suggested', 'suggested.html')
+                    +item('Login', 'login.html')
+                    +item('Bookings', 'bookings.html')
+                    +item('Forgot Password', 'forgot-password.html')
+                    +item('Confirmation', 'confirmation.html')
+                    +item('Bookings', 'bookings.html')

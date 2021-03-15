@@ -1,0 +1,63 @@
+extends ../templates/main
+
+block variables
+    - var title = 'AQENE'
+
+
+block content
+    main.main
+        .header-banner
+            .header-banner__background
+                .container.header-banner__container
+                    .background-dot
+                    .background-gradient
+                .container.header-banner__background-buttom
+                    .background-dot--black
+            .container.header-banner__container
+                .row
+                    .col-md-6.col-sm-12.header-banner__content
+                        h1.header-banner__title Private practice with no doorsand no overhead
+                        p.header-banner__desc You decide your schedule and how much you want to work, we’ll take care of the client referrals and billing details!
+                        .header-banner__button
+                            a(href="#").button.button__yellow.button__yellow--large Apply today!
+                            a(href="#").link-white Why work at AQENE?
+
+                    .col-md-6.col-sm-12.header-banner__image-wrapper
+                        img(src="src/blocks/header-banner/assets/img/header-banner-2.png").header-banner__image
+
+        .information
+            .information__image-container
+                .row
+                    .col-lg-6
+                        .information__background.information__background--full-img.information__background--beige
+                            +testimonialBox('testimonial--absolute testimonial--bottom testimonial--position-el2', "src/blocks/testimonial/assets/img/testimonial-author2.jpg")
+                            //+testimonialBottom('testimonial--full testimonial--position-el2', "src/blocks/testimonial/assets/img/testimonial-author2.jpg")
+                            img(src="src/blocks/information/assets/img/information-image-2.png").information__image.information__image--white.information__image--full.information__image--top
+                    .col-lg-6
+                        .information__content
+                            .information__content-heading
+                                h3.information__content-title.information__content-title--big Earn more with us!
+                            .information__list
+                                .information__list-items
+                                    p Reliable Income
+                                    span Lorem ipsum dolor sit amet. Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas lorem.
+                                .information__list-items
+                                    p Focus on Counseling
+                                    span Lorem ipsum dolor sit amet. Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas lorem.
+                                .information__list-items
+                                    p Work Flexibility
+                                    span Lorem ipsum dolor sit amet. Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas lorem.
+                            .information-button.information-button--offset
+                                a(href="#").button.button__green-gradient Get Started
+                                a(href="#").link-black Requirements
+                                a(href="#").link-black Directory
+
+        //include ../blocks/information/information
+        include ../blocks/benefits/benefits
+        include ../blocks/counseling/counseling
+        include ../blocks/virtual-process/virtual-process
+        include ../blocks/patients-stories/patients-stories
+        include ../blocks/faq/faq
+        +areYou("Question?", "Give us a call", "647.478.7508", "are-you--default-offset")
+        //include ../blocks/are-you/are-you
+        include ../blocks/latest-news/latest-news

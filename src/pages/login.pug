@@ -1,0 +1,59 @@
+extends ../templates/main
+
+block variables
+    - var title = 'AQENE'
+
+
+block content
+    main.main.main--default-offset
+
+        .page-wrapper.page-wrapper--default-offset
+            .container
+                .title-inside.title-inside--bottom-offset.title-inside--position-center
+                    h1 Welcome back!
+                .row.login-wrapper
+                    .col-lg-5
+                        .box-form.box-form--large
+                            .box-form__head
+                                h3 Login with social media account
+                            .box-form__social-button
+                                a(href="#").button.button__social.button__social--facebook
+                                    img(src="/images/icons/facebook.svg")
+                                    | Continue with Facebook
+                                a(href="#").button.button__social.button__social--google
+                                    img(src="/images/icons/google.svg")
+                                    | Continue with Google
+                            .box-form__main
+                                .box-form__items
+                                    input(placeholder="Email")
+                                .box-form__items
+                                    input(placeholder="Password")
+                                .box-form__items.box-form__flex-center
+                                    label.checkbox-button
+                                        input.checkbox-button__input(type="checkbox" required="")
+                                        .checkbox-button__text
+                                            .checkbox-button__status
+                                            p Keep me logged in
+                                    a(href="#").link-black Forgot pasword?
+
+                            .box-form__button
+                                button.form-step__button.form-step__button--change Login
+
+
+                    .col-lg-7
+                        .user-login
+                            .user-login__item
+                                .user-login__image
+                                    img(src="src/blocks/suggested/assets/img/suggested1.jpg")
+                                .user-login__name
+                                    h3 PATIENTS
+                                .user-login__content
+                                    p Are you looking for professinal help?
+                                    a(href="#").link-black Sign up
+                            .user-login__item
+                                .user-login__image
+                                    img(src="src/blocks/suggested/assets/img/suggested1.jpg")
+                                .user-login__name
+                                    h3 THERAPISTS
+                                .user-login__content
+                                    p #[a(href="#").link-black Learn more] why joining Aqene to help others is great!

@@ -1,0 +1,51 @@
+@import "../../libs/scss/mixins";
+@import "../../blocks/base/variables";
+@import "../../blocks/base/media-queries";
+
+.benefits {
+  color: #153257;
+  padding: 150px 0 80px;
+
+  @include mobile-large-screen {
+    padding: 70px 0 20px;
+  }
+
+  &__heading {
+    margin-bottom: 44px;
+    .sub-title {
+      margin-bottom: 27px;
+    }
+    @include table-large-screen {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__list {
+    max-width: 360px;
+    margin-bottom: 55px;
+  }
+
+  &__icon {
+    margin-bottom: 26px;
+
+    .icon-check {
+      fill: #DEE1EF;
+    }
+  }
+
+  &__list-items {
+    p {
+      @include fb();
+      font-size: 20px;
+      line-height: 28px;
+      margin-bottom: 10px;
+    }
+
+    span {
+      @include fr();
+      font-size: 16px;
+      line-height: 24px
+    }
+  }
+
+}

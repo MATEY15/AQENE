@@ -1,0 +1,114 @@
+extends ../templates/main
+
+block variables
+    - var title = 'AQENE'
+
+
+block content
+    main.main.main--default-offset
+
+        .breadcrumbs
+            .container
+                ul.breadcrumbs__list
+                    +listBreadcrumbs("Home")
+                    +listBreadcrumbs("Topics", true)
+
+        .topics
+            .container
+                .topics-title
+                    h1.title-page Velit officia consequat duis enim velit molit. Exercitation veniam consequat sunt amet.
+
+                .topics__wrapper
+                    .topics-item.topics-item--reverse.row
+                        .col-lg-6
+                            .topics-item__content-center
+                                .topics-item__image
+                                    img(src="src/blocks/topics/assets/img/topics1.jpg")
+                        .col-lg-6
+                            .topics-item__content-center
+                                .topics-item__content
+                                    .topics-item__content-head
+                                        h3.topics-item__content-title Family conflicts
+                                        p.topics-item__content-subtitle Not feeling well? Have a health concern? Need a prescription filled?
+                                    .topics-item__content-content
+                                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas lorem. Integer consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim facilisis sodales.
+                                        p nteger vehicula nulla felis, id egest egestas lorem. Integer consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas lorem. Integer consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    .topics-item__content-buttons
+                                        a(href="#").button.button--border-green.button--color-black Book Consultation
+                                        a(href="#").link-black Therapists directory
+
+                    .topics-item.topics-item--reverse.row
+                        .col-lg-6
+                            .topics-item__content-center
+                                .topics-item__image
+                                    img(src="src/blocks/topics/assets/img/topics2.jpg")
+                        .col-lg-6
+                            .topics-item__content-center
+                                .topics-item__content
+                                    .topics-item__content-head
+                                        h3.topics-item__content-title Depression
+                                        p.topics-item__content-subtitle Not feeling well? Have a health concern? Need a prescription filled?
+                                    .topics-item__content-content
+                                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas lorem. Integer consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim facilisis sodales.
+                                        p nteger vehicula nulla felis, id egest egestas lorem. Integer consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas lorem. Integer consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    .topics-item__content-buttons
+                                        a(href="#").button.button--border-green.button--color-black Book Consultation
+                                        a(href="#").link-black Therapists directory
+
+                    .topics-item.topics-item--reverse.row
+                        .col-lg-6
+                            .topics-item__content-center
+                                .topics-item__image
+                                    img(src="src/blocks/topics/assets/img/topics3.jpg")
+                        .col-lg-6
+                            .topics-item__content-center
+                                .topics-item__content
+                                    .topics-item__content-head
+                                        h3.topics-item__content-title Stress, Anxiety
+                                        p.topics-item__content-subtitle Not feeling well? Have a health concern? Need a prescription filled?
+                                    .topics-item__content-content
+                                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas lorem. Integer consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim facilisis sodales.
+                                        p nteger vehicula nulla felis, id egest egestas lorem. Integer consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas lorem. Integer consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    .topics-item__content-buttons
+                                        a(href="#").button.button--border-green.button--color-black Book Consultation
+                                        a(href="#").link-black Therapists directory
+
+                    .topics-item.topics-item--reverse.row
+                        .col-lg-6
+                            .topics-item__content-center
+                                .topics-item__image
+                                    img(src="src/blocks/topics/assets/img/topics4.jpg")
+                        .col-lg-6
+                            .topics-item__content-center
+                                .topics-item__content
+                                    .topics-item__content-head
+                                        h3.topics-item__content-title Relationship issues
+                                        p.topics-item__content-subtitle Not feeling well? Have a health concern? Need a prescription filled?
+                                    .topics-item__content-content
+                                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas lorem. Integer consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim facilisis sodales.
+                                        p nteger vehicula nulla felis, id egest egestas lorem. Integer consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas lorem. Integer consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    .topics-item__content-buttons
+                                        a(href="#").button.button--border-green.button--color-black Book Consultation
+                                        a(href="#").link-black Therapists directory
+
+                    .topics-item.topics-item--reverse.row
+                        .col-lg-6
+                            .topics-item__content-center
+                                .topics-item__image
+                                    img(src="src/blocks/topics/assets/img/topics5.jpg")
+                        .col-lg-6
+                            .topics-item__content-center
+                                .topics-item__content
+                                    .topics-item__content-head
+                                        h3.topics-item__content-title Parenting issues
+                                        p.topics-item__content-subtitle Not feeling well? Have a health concern? Need a prescription filled?
+                                    .topics-item__content-content
+                                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas lorem. Integer consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim facilisis sodales.
+                                        p nteger vehicula nulla felis, id egest egestas lorem. Integer consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas lorem. Integer consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    .topics-item__content-buttons
+                                        a(href="#").button.button--border-green.button--color-black Book Consultation
+                                        a(href="#").link-black Therapists directory
+
+
+        include ../blocks/faq/faq
+        +areYou("Question?", "Give us a call", "647.478.7508")

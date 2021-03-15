@@ -1,0 +1,7 @@
+@import "../../libs/scss/mixins";
+@import "../../blocks/base/variables";
+@import "../../blocks/base/media-queries";
+
+@import "src/blocks/slick-option/slickFix";
+@import "~slick-carousel/slick/slick";
+@import "~slick-carousel/slick/slick-theme.scss";

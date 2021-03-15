@@ -1,0 +1,143 @@
+@import "../../libs/scss/mixins";
+@import "../../blocks/base/variables";
+@import "../../blocks/base/media-queries";
+
+@import "src/blocks/slick-option/slickFix";
+@import "~slick-carousel/slick/slick";
+@import "~slick-carousel/slick/slick-theme.scss";
+
+.latest-news {
+  background: #FFF7F6;
+  border-radius: 10px;
+  max-width: 1600px;
+  margin: 0 auto 70px;
+  padding: 85px 0 95px;
+
+  @include mobile-large-screen {
+    padding: 54px 0;
+    margin-bottom: 30px;
+  }
+
+  &--default-offset {
+    margin-top: 30px;
+    @include margin-bottom(30px, 100px, 480px, 1400px);
+  }
+
+  &__heading {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 40px;
+
+    @include mobile-large-screen {
+      margin-bottom: 20px;
+    }
+
+    .link-black {
+      margin-left: 25px;
+    }
+  }
+
+  &__slider {
+    padding: 0 !important;
+  }
+
+  &__item {
+    padding: 0 20px;
+  }
+
+  &__item-slide {
+    background: #FFFFFF;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  &__date {
+    @include fr();
+    font-size: 16px;
+    line-height: 24px;
+    color: #153257;
+    padding: 25px 25px 20px;
+    border-bottom: 1px solid #F4F4F7;
+  }
+
+  &__title {
+    @include fm();
+    font-size: 20px;
+    line-height: 28px;
+    text-decoration: underline;
+    color: #153257;
+    padding: 21px 25px;
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    a {
+      color: #153257;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__image {
+    position: relative;
+    display: flex;
+    min-height: 120px;
+
+    img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    background: #FFFFFF;
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+
+    @include mobile-large-screen {
+      width: 50px;
+      height: 50px;
+      border-radius: 10px;
+    }
+  }
+
+  &__navigate {
+    position: relative;
+  }
+
+  &__button {
+    position: absolute;
+    bottom: 20px;
+    cursor: pointer;
+  }
+
+  &__button--next {
+    right: -38px;
+    @include laptop-large-screen {
+      right: -20px;
+    }
+    @include laptop-small-screen {
+      right: 0px;
+    }
+  }
+
+  &__button--prev {
+    left: -38px;
+    @include laptop-large-screen {
+      left: -20px;
+    }
+    @include laptop-small-screen {
+      left: 0;
+    }
+  }
+}

@@ -1,0 +1,138 @@
+extends ../templates/main
+
+block variables
+    - var title = 'AQENE'
+
+
+block content
+    main.main
+        .header-banner
+            .header-banner__background
+                .container.header-banner__container
+                    .background-dot
+                    .background-gradient
+                .container.header-banner__background-buttom
+                    .background-dot--black
+            .container.header-banner__container
+                .row
+                    .col-md-6.col-sm-12.header-banner__content
+                        h1.header-banner__title More about AQENE
+                        p.header-banner__desc Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat.
+                        .header-banner__button
+                            a(href="#").button.button__yellow.button__yellow--large Our Team
+                            a(href="#").link-white Work with us
+
+                    .col-md-6.col-sm-12.header-banner__image-wrapper
+                        img(src="src/blocks/header-banner/assets/img/header-banner-7.png").header-banner__image
+
+        .about__content.about__content--default-offset
+            .container
+                .about__content-text.about__content-text--center.about__content-text--bold
+                    b Guided digital therapy with us is highly personalized to what you're feeling and who you are, as a whole person. Through secure digital messaging, and tailored readings and activities, you’ll work 1-to-1 with a registered therapist. Your therapist is focused on your improvement and will support you all along the way.
+
+        .information
+            .information__image-container.information__image-container--default-offset
+                .row
+                    .col-lg-6
+                        .information__background.information__background--full-img.information__background--beige
+                            +testimonialBox('testimonial--absolute testimonial--bottom testimonial--position-el2', "src/blocks/testimonial/assets/img/testimonial-author2.jpg")
+                            //+testimonialBottom('testimonial--full testimonial--position-el2', "src/blocks/testimonial/assets/img/testimonial-author2.jpg")
+                            img(src="src/blocks/information/assets/img/information-image-2.png").information__image.information__image--white.information__image--full.information__image--top
+                    .col-lg-6
+                        .information__content
+                            .information__content-heading
+                                h3.information__content-title.information__content-title--big Earn more with us!
+                            .information__list
+                                .information__list-items
+                                    p Reliable Income
+                                    span Lorem ipsum dolor sit amet. Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas lorem.
+                                .information__list-items
+                                    p Focus on Counseling
+                                    span Lorem ipsum dolor sit amet. Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas lorem.
+                                .information__list-items
+                                    p Work Flexibility
+                                    span Lorem ipsum dolor sit amet. Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas lorem.
+                            .information-button.information-button--offset
+                                a(href="#").button.button__green-gradient Get Started
+
+        .information__image-container.information__image-container--default-offset
+            .row
+                .col-lg-6.order-1.order-lg-0
+                    .information__content.information-content--right
+                        .information__content-heading
+                            h3.information__content-title Who we are & #[br]Our culture
+                        .information__content-text
+                            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas lorem. Integer consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas lorem. Integer consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            p Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas lorem. Integer consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas lorem. Integer consequat. Id egest egestas lorem.Integer consequat.
+                            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas lorem. Integer consequat.
+
+                        .information__button
+                            a(href="#").link-black More About us
+                            a(href="#").link-black Our Team
+
+                .col-lg-6.order-0.order-lg-1
+                    .information__background.information__background--right.information__background--full-img.information__background--blue
+                        img(src="src/blocks/information/assets/img/information-image-8.png").information__image.information__image--white.information__image--full.information__image--top
+
+
+        .patients-stories.patients-stories--bottom-offset
+            .container
+                .row
+                    .col-lg-7.order-2.order-lg-1
+                        .patients-stories__video-slider
+                            .patients-stories__video-wrapper
+                                a(href="http://www.youtube.com/watch?v=0O2aH4XLbto").patients-stories__video.popup-youtube
+                                    img(src="src/blocks/patients-stories/assets/img/patients-stories__video1.jpg").patients-stories__video-image
+                                    i.patients-stories__video-play
+                            .patients-stories__video-wrapper
+                                a(href="http://www.youtube.com/watch?v=0O2aH4XLbto").patients-stories__video.popup-youtube
+                                    img(src="src/blocks/patients-stories/assets/img/patients-stories__video2.jpg").patients-stories__video-image
+                                    i.patients-stories__video-play
+
+                    .col-lg-5.order-1.order-lg-2
+                        .patients-stories__stories-wrapper
+                            .patients-stories__stories-head
+                                .patients-stories__stories-image
+                                    //img(src="src/blocks/patients-stories/assets/img/image-rating-reviews.png")
+                                    +testimonial('testimonial--big', "src/blocks/testimonial/assets/img/testimonial-author1.jpg")
+                                .patients-stories__stories-title
+                                    h3 Patients' stories
+                                    .patients-stories__stories-navigate
+                            .patients-stories__slider
+                                .patients-stories__slider-items
+                                    .patients-stories__rating
+                                        .rating
+                                            span.rating-item
+                                                +iconSvg('18', '17', '0 0 18 17', 'rating-star')
+                                            span.rating-item
+                                                +iconSvg('18', '17', '0 0 18 17', 'rating-star')
+                                            span.rating-item
+                                                +iconSvg('18', '17', '0 0 18 17', 'rating-star')
+                                            span.rating-item
+                                                +iconSvg('18', '17', '0 0 18 17', 'rating-star')
+                                            span.rating-item
+                                                +iconSvg('18', '17', '0 0 18 17', 'rating-star')
+                                    .patients-stories__stories
+                                        p.patients-stories__desc “Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Ut dignissim facil isis sodales ipsum dolor sit amet, conse ctetur adipiscing elit ipsum dolor sit amet, consectetur adipiscing elinteger elit ipsum dolor conse vehicula nulla ipsum dolor sit”
+                                        .patients-stories__name Theresa T, Toronto
+                                .patients-stories__slider-items
+                                    .patients-stories__rating
+                                        .rating
+                                            span.rating-item
+                                                +iconSvg('18', '17', '0 0 18 17', 'rating-star')
+                                            span.rating-item
+                                                +iconSvg('18', '17', '0 0 18 17', 'rating-star')
+                                            span.rating-item
+                                                +iconSvg('18', '17', '0 0 18 17', 'rating-star')
+                                            span.rating-item
+                                                +iconSvg('18', '17', '0 0 18 17', 'rating-star')
+                                            span.rating-item
+                                                +iconSvg('18', '17', '0 0 18 17', 'rating-star')
+                                    .patients-stories__stories
+                                        p.patients-stories__desc “Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Ut dignissim facil isis sodales ipsum dolor sit amet, conse ctetur adipiscing elit ipsum dolor sit amet, consectetur adipiscing elinteger elit ipsum dolor conse vehicula nulla ipsum dolor sit”
+                                        .patients-stories__name Theresa T, Toronto
+
+
+        //include ../blocks/virtual-process/virtual-process
+
+        include ../blocks/partner/partner

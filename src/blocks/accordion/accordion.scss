@@ -1,0 +1,76 @@
+@import "../../libs/scss/mixins";
+@import "../../blocks/base/variables";
+@import "../../blocks/base/media-queries";
+
+.accordion {
+  color: #153257;
+
+  &__item {
+    border-top: 1px solid #C9E8DA;
+    padding-bottom: 17px;
+
+    &:last-child {
+      border-bottom: 1px solid #C9E8DA;
+    }
+
+    &:first-child {
+      .accordion__description {
+        display: block;
+      }
+    }
+  }
+
+  &__item--active {
+    .accordion__title-icon svg {
+      fill: #4637A5;
+      transform: scale(-1);
+    }
+  }
+
+  &__title {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include fm();
+    font-size: 20px;
+    line-height: 28px;
+    color: #153257;
+    padding: 23px 0 6px;
+    padding-right: 64px;
+    cursor: pointer;
+  }
+
+  &__title-icon {
+    position: absolute;
+    top: 34px;
+    right: 40px;
+    width: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include table-large-screen {
+      right: 15px;
+    }
+
+    svg {
+      transition: all .15s ease-out;
+      fill: #A1ADBC;
+    }
+  }
+
+  &__description {
+    @include fr();
+    font-size: 16px;
+    line-height: 24px;
+    display: none;
+    color: #153257;
+
+    p {
+      max-width: 680px;
+      @include laptop-small-screen {
+        width: 85%;
+      }
+    }
+  }
+}

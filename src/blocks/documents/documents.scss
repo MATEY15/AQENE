@@ -1,0 +1,46 @@
+@import "../../libs/scss/mixins";
+@import "../../blocks/base/variables";
+@import "../../blocks/base/media-queries";
+
+.documents {
+
+  &--default-offset {
+    @include padding-top(40px, 100px, 480px, 1400px);
+    @include padding-bottom(40px, 100px, 480px, 1400px);
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+    border-radius: 100px;
+    min-height: 130px;
+    padding: 20px 35px;
+    @include table-large-screen {
+      min-height: 100px;
+      padding: 20px 20px;
+      margin: 15px 0;
+    }
+  }
+
+  &__icon {
+    margin-right: 24px;
+  }
+
+  &__text {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    @include fm();
+    @include font-size(24px, 40px, 480px, 1400px);
+    color: #153257;
+
+    a, span {
+      color: #4637a5;
+      display: inline-block;
+      margin-left: 8px;
+    }
+  }
+}

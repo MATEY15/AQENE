@@ -1,0 +1,237 @@
+$gradient: 'linear-gradient(190.09deg, #D18C4E 3.61%, #FAC075 51.88%, #D18C4E 100.99%)';
+
+$fb: 'HelveticaNeueLTPro-Bd', sans-serif;
+
+@mixin fb {
+  font-family: 'HelveticaNeueLTPro-Bd', sans-serif;
+}
+
+@mixin fbl {
+  font-family: 'HelveticaNeueLTPro-Blk', sans-serif;
+}
+
+@mixin fm {
+  font-family: 'HelveticaNeueLTPro-Md', sans-serif;
+}
+
+@mixin fl {
+  font-family: 'HelveticaNeueLTPro-UltLt', sans-serif;
+}
+
+@mixin fr {
+  font-family: 'HelveticaNeueLTPro-Lt', sans-serif;
+}
+
+
+@mixin font-ibm {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+@mixin font-cuprum {
+  font-family: 'Cuprum', sans-serif;
+}
+
+@mixin text-gradient {
+  background: #{$gradient};
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: var(--gold-color);
+}
+
+
+
+// ==============================
+// Mixins Custom
+// ==============================
+
+@mixin trn($time) {
+  transition: all $time ease-out;
+}
+
+@mixin brr($rad) {
+  border-radius: $rad;
+}
+
+@mixin tt($Xposition, $Yposition) {
+  transform: translate($Xposition, $Yposition);
+}
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {@content}
+  &:-moz-placeholder           {@content}
+  &::-moz-placeholder          {@content}
+  &:-ms-input-placeholder      {@content}
+}
+
+
+// ==============================
+// Font size mixin
+// ==============================
+
+//  default font scale bounding
+$font-lock-min:  400px !default;
+$font-lock-max: 1000px !default;
+
+//  font-size
+@mixin font-size(
+  $min,                         // font-size
+  $max: null,                   // optional maximum font size
+  $lock-min: $font-lock-min,  // optional minimum viewport width
+  $lock-max: $font-lock-max   // optional maximum viewport width
+){
+  & { font-size: $min; }
+  @if $max {
+    @media (min-width: $lock-min) {
+      & {
+        font-size: calc(
+                #{$min} +
+                #{num($max) - num($min)} *
+                (100vw - #{$lock-min}) /
+                #{num($lock-max) - num($lock-min)}
+        );
+      }
+    }
+    @media (min-width: $lock-max){
+      & { font-size: $max; }
+    }
+  }
+}
+
+// Line Height
+
+@mixin line-height(
+  $min,                       // line-height
+  $max: null,                 // optional maximum line-height
+  $lock-min: $font-lock-min,  // optional minimum viewport width
+  $lock-max: $font-lock-max   // optional maximum viewport width
+) {
+
+  & { line-height: $min; }
+  @if $max {
+    @media (min-width: $lock-min) {
+      & {
+        line-height: calc(
+                #{$min} +
+                #{num($max) - num($min)} *
+                (100vw - #{$lock-min}) /
+                #{num($lock-max) - num($lock-min)}
+        );
+      }
+    }
+    @media (min-width: $lock-max){
+      & { line-height: $max; }
+    }
+  }
+
+}
+
+@mixin padding-top(
+  $min,                       // padding-top
+  $max: null,                 // optional maximum padding-top
+  $lock-min: $font-lock-min,  // optional minimum viewport width
+  $lock-max: $font-lock-max   // optional maximum viewport width
+) {
+
+  & { padding-top: $min; }
+  @if $max {
+    @media (min-width: $lock-min) {
+      & {
+        padding-top: calc(
+                #{$min} +
+                #{num($max) - num($min)} *
+                (100vw - #{$lock-min}) /
+                #{num($lock-max) - num($lock-min)}
+        );
+      }
+    }
+    @media (min-width: $lock-max){
+      & { padding-top: $max; }
+    }
+  }
+
+}
+
+@mixin padding-bottom(
+  $min,                       // padding-bottom
+  $max: null,                 // optional maximum padding-bottom
+  $lock-min: $font-lock-min,  // optional minimum viewport width
+  $lock-max: $font-lock-max   // optional maximum viewport width
+) {
+
+  & { padding-bottom: $min; }
+  @if $max {
+    @media (min-width: $lock-min) {
+      & {
+        padding-bottom: calc(
+                #{$min} +
+                #{num($max) - num($min)} *
+                (100vw - #{$lock-min}) /
+                #{num($lock-max) - num($lock-min)}
+        );
+      }
+    }
+    @media (min-width: $lock-max){
+      & { padding-bottom: $max; }
+    }
+  }
+
+}
+
+
+@mixin margin-top(
+  $min,                       // margin-top
+  $max: null,                 // optional maximum margin-top
+  $lock-min: $font-lock-min,  // optional minimum viewport width
+  $lock-max: $font-lock-max   // optional maximum viewport width
+) {
+
+  & { margin-top: $min; }
+  @if $max {
+    @media (min-width: $lock-min) {
+      & {
+        margin-top: calc(
+                #{$min} +
+                #{num($max) - num($min)} *
+                (100vw - #{$lock-min}) /
+                #{num($lock-max) - num($lock-min)}
+        );
+      }
+    }
+    @media (min-width: $lock-max){
+      & { margin-top: $max; }
+    }
+  }
+}
+
+@mixin margin-bottom(
+  $min,                       // margin-bottom
+  $max: null,                 // optional maximum margin-bottom
+  $lock-min: $font-lock-min,  // optional minimum viewport width
+  $lock-max: $font-lock-max   // optional maximum viewport width
+) {
+
+  & { margin-bottom: $min; }
+  @if $max {
+    @media (min-width: $lock-min) {
+      & {
+        margin-bottom: calc(
+                #{$min} +
+                #{num($max) - num($min)} *
+                (100vw - #{$lock-min}) /
+                #{num($lock-max) - num($lock-min)}
+        );
+      }
+    }
+    @media (min-width: $lock-max){
+      & { margin-bottom: $max; }
+    }
+  }
+}
+
+//  strip units helper function
+@function num($input){
+  @return $input/($input * 0 + 1);
+}
+
+
+

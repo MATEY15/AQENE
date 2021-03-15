@@ -1,0 +1,110 @@
+extends ../templates/main
+
+block variables
+    - var title = 'AQENE'
+
+
+block content
+    main.main.main--default-offset
+
+        .page-wrapper.page-wrapper--default-offset
+
+            .title-inside.title-inside--bottom-offset.title-inside--position-center
+                h1 Select Options
+
+            .select-option
+                .container
+                    .row
+                        .col-lg-4.col-md-6.order-1.order-lg-0
+                            .select-option__item
+                                .select-option__item-name 1 Session
+                                .select-option__item-content
+                                    .select-option__item-price
+                                        span $
+                                        p 100
+                                    .select-option__item-button
+                                        a(href="#").button.button--border-green.button--color-black Get Started
+                        .col-lg-4.col-md-12.order-0.order-lg-1
+                            .select-option__item.select-option__item--active
+                                .select-option__item-name 1 Session
+                                .select-option__item-content
+                                    .select-option__item-price
+                                        span $
+                                        p 375
+                                    .select-option__item-button
+                                        a(href="#").button.button__yellow Get Started
+                        .col-lg-4.col-md-6.order-2.order-lg-2
+                            .select-option__item
+                                .select-option__item-name 3 Session
+                                .select-option__item-content
+                                    .select-option__item-price
+                                        span $
+                                        p 600
+                                    .select-option__item-button
+                                        a(href="#").button.button--border-green.button--color-black Get Started
+
+
+            br
+            br
+            br
+
+            .box-form.box-form--default-offset.box-form--position-center
+                .box-form__head
+                    h3 Billing address
+                form.box-form__main.box-form__main--flex-position
+                    .box-form__items
+                        input(placeholder="Address")
+                    .box-form__items
+                        input(placeholder="City")
+                    .box-form__items.col-6
+                        input(placeholder="Province / State")
+                    .box-form__items.col-6
+                        input(placeholder="Postal Code / ZIP code")
+                    .box-form__items
+                        input(placeholder="Country")
+                    .box-form__items
+                        input(placeholder="Phone")
+                    .box-form__button
+                        button.button.button--border-green.button--color-black Save address
+
+            br
+            br
+            br
+
+
+            .box-form.box-form--default-offset.box-form--position-center
+                    .box-form__head.box-form__head--flex-content
+                        h3 We accept:
+                        .card-icons
+                            .card-icons__item
+                                img(src="/images/icons/payment-card1.png")
+                            .card-icons__item
+                                img(src="/images/icons/payment-card2.png")
+                            .card-icons__item
+                                img(src="/images/icons/payment-card3.png")
+                            .card-icons__item
+                                img(src="/images/icons/payment-card4.png")
+
+                    .box-form__main.box-form__main--flex-position
+
+                        .box-form__items
+                            .box-form__input-name
+                                label.box-form__input-label(for="card-number") Card Number
+                                input#card-number(placeholder="_ _ _ _    _ _ _ _    _ _ _ _    _ _ _ _")
+                        .box-form__items.col-7
+                            .box-form__input-name
+                                label.box-form__input-label(for="card-date") Expire
+                                input#card-date(placeholder="_ _  /  _ _")
+                        .box-form__items.col-5
+                            .box-form__input-name
+                                label.box-form__input-label.box-form__input-label--small(for="card-cvv") CVV
+                                input#card-cvv(placeholder="_ _ _")
+                        .box-form__items
+                            .box-form__input-name
+                                label.box-form__input-label(for="card-name") Name on Card
+                                input#card-name(placeholder="")
+                        .box-form__items
+                            input(placeholder="Create password")
+                    .form-step__navigate
+                        button.form-step__button.form-step__button--prev Go back
+                        button.form-step__button.form-step__button--next.form-step__button--change Next

@@ -1,0 +1,14 @@
+@import "../../libs/scss/mixins";
+@import "../../blocks/base/variables";
+@import "../../blocks/base/media-queries";
+
+.container {
+  @include laptop-large-screen-min {
+    max-width: 1392px !important;
+  }
+  &--big {
+    @include laptop-large-screen-min {
+      max-width: 1432px !important;
+    }
+  }
+}

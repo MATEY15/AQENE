@@ -1,0 +1,59 @@
+mixin directoryItem(image)
+    .directory__card
+        .directory__image-wrapper
+            img.directory__image(src=image)
+        .directory__desc
+            h4.directory__name Dr. John Doe
+            .directory__desc-text
+                p Psychologists Licensing: PhD, LP
+                p Years of Experience: 8
+            .directory__content
+                span Online Therapy & Counseling Specialties
+                a(href="#") Online Therapy & Counseling Specialties
+
+.directory.directory--default-offset
+    .container
+        .row
+            .col-lg-9.order-1.order-lg-0
+                .directory__cards
+                    .directory__cards-col
+                        +directoryItem("src/blocks/directory/assets/img/directory-1.jpg")
+                    .directory__cards-col
+                        +directoryItem("src/blocks/directory/assets/img/directory-2.jpg")
+                    .directory__cards-col
+                        +directoryItem("src/blocks/directory/assets/img/directory-3.jpg")
+                    .directory__cards-col
+                        +directoryItem("src/blocks/directory/assets/img/directory-4.jpg")
+                    .directory__cards-col
+                        +directoryItem("src/blocks/directory/assets/img/directory-5.jpg")
+                    .directory__cards-col
+                        +directoryItem("src/blocks/directory/assets/img/directory-6.jpg")
+                .directory__load-wrapper
+                    a(href="#").directory__load.icon-load
+
+                //.row.directory__cards
+                //    .col-lg-4
+                //        +directoryItem("src/blocks/directory/assets/img/directory-1.jpg")
+                //    .col-lg-4
+                //        +directoryItem("src/blocks/directory/assets/img/directory-2.jpg")
+                //    .col-lg-4
+                //        +directoryItem("src/blocks/directory/assets/img/directory-3.jpg")
+            .col-lg-3.order-0.order-lg-1
+                .sidebar
+                    .menu-sidebar-toggle
+                        span
+                        span
+                        span
+                    .menu-sidebar.menu-sidebar__mobile-hide
+                        li.menu-sidebar__list.menu-sidebar__list--active
+                            a(href="#") All specialties
+                        li.menu-sidebar__list
+                            a(href="#") Family conflicts
+                        li.menu-sidebar__list
+                            a(href="#") Depression
+                        li.menu-sidebar__list
+                            a(href="#") Stress, Anxiety
+                        li.menu-sidebar__list
+                            a(href="#") Relationship issues
+                        li.menu-sidebar__list
+                            a(href="#") Parenting issues

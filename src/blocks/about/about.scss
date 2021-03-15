@@ -1,0 +1,79 @@
+@import "../../libs/scss/mixins";
+@import "../../blocks/base/variables";
+@import "../../blocks/base/media-queries";
+
+.about {
+  overflow-x: hidden;
+
+  &--default-offset {
+    @include padding-top(25px, 90px, 480px, 1400px);
+    @include padding-bottom(70px, 120px, 480px, 1400px);
+  }
+
+  &--inside-offset {
+    @include padding-top(25px, 90px, 480px, 1400px);
+  }
+
+  .container {
+    position: relative;
+  }
+
+  .row {
+    position: relative;
+  }
+
+  //.about-background {
+  //  position: absolute;
+  //  top: -220px;
+  //  right: -95px;
+  //  width: 695px;
+  //  height: 522px;
+  //  background-image: url(assets/img/header-banner__dot-black.svg);
+  //  @include table-large-screen {
+  //    display: none;
+  //  }
+  //}
+
+  .heading {
+    margin-bottom: 20px;
+  }
+
+  &__content {
+    @include fr();
+    font-size: 23px;
+    line-height: 32px;
+    color: #153257;
+
+    &--default-offset {
+      padding: 85px 0 100px;
+    }
+
+    .link-black {
+      margin-top: 20px;
+    }
+  }
+
+  &__content--strong {
+    @include fb();
+  }
+
+  // Block
+
+  &__content-text {
+    display: block;
+    max-width: 1155px;
+    margin: 0 auto;
+    @include fb();
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+
+    color: #153257;
+
+    &--center {
+      text-align: center;
+    }
+
+  }
+
+}

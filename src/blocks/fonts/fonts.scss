@@ -1,0 +1,55 @@
+@import "../../libs/scss/mixins";
+@import "../../blocks/base/variables";
+@import "../../blocks/base/media-queries";
+
+// Use variable in file - variables.scss
+
+@font-face {
+  font-family: 'HelveticaNeueLTPro-UltLt';
+  font-weight: normal;
+  font-style: normal;
+  src: url("assets/fonts/HelveticaNeueLTPro-UltLt/HelveticaNeueLTPro-UltLt.eot");
+  src: url("assets/fonts/HelveticaNeueLTPro-UltLt/HelveticaNeueLTPro-UltLt.eot?#iefix")format("embedded-opentype"),
+  url("assets/fonts/HelveticaNeueLTPro-UltLt/HelveticaNeueLTPro-UltLt.woff") format("woff"),
+  url("assets/fonts/HelveticaNeueLTPro-UltLt/HelveticaNeueLTPro-UltLt.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'HelveticaNeueLTPro-Lt';
+  font-weight: normal;
+  font-style: normal;
+  src: url("assets/fonts/HelveticaNeueLTPro-Lt/HelveticaNeueLTPro-Lt.eot");
+  src: url("assets/fonts/HelveticaNeueLTPro-Lt/HelveticaNeueLTPro-Lt.eot?#iefix")format("embedded-opentype"),
+  url("assets/fonts/HelveticaNeueLTPro-Lt/HelveticaNeueLTPro-Lt.woff") format("woff"),
+  url("assets/fonts/HelveticaNeueLTPro-Lt/HelveticaNeueLTPro-Lt.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'HelveticaNeueLTPro-Bd';
+  font-weight: normal;
+  font-style: normal;
+  src: url("assets/fonts/HelveticaNeueLTPro-Bd/HelveticaNeueLTPro-Bd.eot");
+  src: url("assets/fonts/HelveticaNeueLTPro-Bd/HelveticaNeueLTPro-Bd.eot?#iefix")format("embedded-opentype"),
+  url("assets/fonts/HelveticaNeueLTPro-Bd/HelveticaNeueLTPro-Bd.woff") format("woff"),
+  url("assets/fonts/HelveticaNeueLTPro-Bd/HelveticaNeueLTPro-Bd.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'HelveticaNeueLTPro-Md';
+  font-weight: normal;
+  font-style: normal;
+  src: url("assets/fonts/HelveticaNeueLTPro-Md/HelveticaNeueLTPro-Md.eot");
+  src: url("assets/fonts/HelveticaNeueLTPro-Md/HelveticaNeueLTPro-Md.eot?#iefix")format("embedded-opentype"),
+  url("assets/fonts/HelveticaNeueLTPro-Md/HelveticaNeueLTPro-Md.woff") format("woff"),
+  url("assets/fonts/HelveticaNeueLTPro-Md/HelveticaNeueLTPro-Md.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'HelveticaNeueLTPro-Blk';
+  font-weight: normal;
+  font-style: normal;
+  src: url("assets/fonts/HelveticaNeueLTPro-Blk/HelveticaNeueLTPro-Blk.eot");
+  src: url("assets/fonts/HelveticaNeueLTPro-Blk/HelveticaNeueLTPro-Blk.eot?#iefix")format("embedded-opentype"),
+  url("assets/fonts/HelveticaNeueLTPro-Blk/HelveticaNeueLTPro-Blk.woff") format("woff"),
+  url("assets/fonts/HelveticaNeueLTPro-Blk/HelveticaNeueLTPro-Blk.ttf") format("truetype");
+}

@@ -1,0 +1,56 @@
+@import "../../libs/scss/mixins";
+@import "../../blocks/base/variables";
+@import "../../blocks/base/media-queries";
+
+.profile {
+  color: #153257;
+
+  &--default-offset {
+    @include padding-top(65px, 95px, 480px, 1400px);
+  }
+
+  &__title {
+    @include fm();
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  &__content {
+    max-width: 710px;
+
+    h1, h2, h3, h4, h5, h6 {
+      @include fm();
+      font-weight: normal;
+    }
+
+    h2, h3 {
+      font-size: 40px;
+      line-height: 48px;
+      margin-bottom: 20px;
+    }
+
+    h4 {
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 5px;
+      margin-top: 10px;
+    }
+
+    p {
+      @include fr();
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 10px;
+    }
+
+    b {
+      @include fb();
+      font-size: 20px;
+      line-height: 28px;
+      margin-bottom: 10px;
+      display: inline-block;
+    }
+  }
+
+}

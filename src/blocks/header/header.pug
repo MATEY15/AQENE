@@ -1,0 +1,26 @@
+header.header
+    .container.header__container
+        .header__logo
+            a(href="#").logo
+                img(src="images/logo.svg").logo__image
+        .header__navigation
+            .header__menu-wrapper
+                //.header__navigation-scroll
+                ul.header__menu
+                    li
+                        a(href="#") Patients
+                    li
+                        a(href="#") Therapists
+                    li
+                        a(href="#") Topics
+                    li
+                        a(href="#") About Us
+
+                .header__mobile-container
+                    a(href="tel:1-855-241-3325").header__mobile-phone 1-855-241-3325
+
+            .header__login-wrapper
+                a(href="#").button.button--empty Book Consultation
+                a(href="#").button.button--border.content-transfer.content-transfer--el1 Login
+
+            include ../burger-menu/burger-menu

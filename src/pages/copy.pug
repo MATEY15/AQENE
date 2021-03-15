@@ -1,0 +1,190 @@
+extends ../templates/main
+
+block variables
+    - var title = 'AQENE'
+
+
+block content
+    main.main
+        .header-banner
+            .header-banner__background
+                .container.header-banner__container
+                    .background-dot
+                    .background-gradient
+                .container.header-banner__background-buttom
+                    .background-dot--black
+            .container.header-banner__container
+                .row
+                    .col-md-6.col-sm-12.header-banner__content
+                        h1.header-banner__title Why work at AQENE?
+                        p.header-banner__desc Interested in joining the world’s largest mental health platform? You decide your schedule and how much you want to work, we’ll take care of the client referrals and billing details!
+                        .header-banner__button
+                            a(href="#").button.button__yellow Get Started
+                            a(href="#").link-white Requirements
+                            //+iconSvg('16', '16', '0 0 16 16', 'icon-load')
+                            a(href="#").icon-load
+
+                    .col-md-6.col-sm-12.header-banner__image-wrapper
+                        img(src="src/blocks/header-banner/assets/img/header-banner-3.png").header-banner__image
+
+        .benefits
+            .container
+                .row
+                    .col-lg-12
+                        .benefits__heading
+                            p.sub-title Features & Benefits
+                            h3.section-title Why Virtual Counseling?
+                    .col-lg-12
+                        .row
+                            .col-lg-4
+                                .benefits__list
+                                    .benefits__list-items
+                                        .benefits__icon
+                                            +iconSvg('20', '20', '0 0 20 20', 'icon-check')
+                                        p Work Flexibility
+                                        span Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas.
+                            .col-lg-4
+                                .benefits__list
+                                    .benefits__list-items
+                                        .benefits__icon
+                                            +iconSvg('20', '20', '0 0 20 20', 'icon-check')
+                                        p Reliable Income
+                                        span Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas.
+                            .col-lg-4
+                                .benefits__list
+                                    .benefits__list-items
+                                        .benefits__icon
+                                            +iconSvg('20', '20', '0 0 20 20', 'icon-check')
+                                        p Focus on Counseling
+                                        span Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas.
+
+        .information
+            .information__image-container
+                .row
+                    .col-lg-6
+                        .information__background.information__background--full-img.information__background--beige
+                            +testimonialBottom('testimonial--full', "src/blocks/testimonial/assets/img/testimonial-author2.jpg")
+                            img(src="src/blocks/information/assets/img/information-image-3.png").information__image.information__image--white.information__image--full.information__image--top
+                    .col-lg-6
+                        .information__content
+                            .information__content-heading
+                                h3.information__content-title Simple, easy-to-use application - text, phone, video
+                            .information__content-text
+                                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas lorem. Integer consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas lorem. Integer consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                p Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas lorem. Integer consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas lorem. Integer consequat. Id egest egestas lorem.Integer consequat.
+                                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas lorem. Integer consequat.
+
+                            .information__button
+                                a(href="#").button.button__green-gradient Get Started
+                                a(href="#").link-black Requirements
+                                a(href="#").link-black Directory
+
+            .information__image-container
+                .row
+                    .col-lg-6.order-1.order-lg-0
+                        .information__content.information-content--right
+                            .information__content-heading
+                                h3.information__content-title Who we are & #[br] Our culture
+                            .information__content-text
+                                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas lorem. Integer consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas lorem. Integer consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                p Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas lorem. Integer consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas lorem. Integer consequat. Id egest egestas lorem.Integer consequat.
+                                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas lorem. Integer consequat.
+
+                            .information__button
+                                a(href="#").button.button__green-gradient Get Started
+                                a(href="#").link-black Requirements
+                                a(href="#").link-black Directory
+
+                    .col-lg-6.order-0.order-lg-1
+                        .information__background.information__background--right.information__background--full-img.information__background--blue
+                            img(src="src/blocks/information/assets/img/information-image-4.png").information__image.information__image--white.information__image--full.information__image--top
+
+
+            //.information__image-container
+            //    .row
+            //        .col-lg-6.order-1.order-lg-0
+            //            .information__content.information-content--right
+            //                .information__content-heading
+            //                    h3.information__content-title.information__content-title--big Earn more with us!
+            //                .information__list
+            //                    .information__list-items
+            //                        p Reliable Income
+            //                        span Lorem ipsum dolor sit amet. Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas lorem.
+            //                    .information__list-items
+            //                        p Focus on Counseling
+            //                        span Lorem ipsum dolor sit amet. Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas lorem.
+            //                    .information__list-items
+            //                        p Work Flexibility
+            //                        span Lorem ipsum dolor sit amet. Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas lorem.
+            //                .information-button.information-button--offset
+            //                    a(href="#").button.button__green-gradient Get Started
+            //                    a(href="#").link-black Requirements
+            //                    a(href="#").link-black Directory
+            //
+            //        .col-lg-6.order-0.order-lg-1
+            //            .information__background.information__background--right.information__background--full-img.information__background--beige
+            //                img(src="src/blocks/information/assets/img/information-image-4.png").information__image.information__image--white.information__image--full.information__image--top
+
+            .information__image-container
+                .row
+                    .col-lg-6
+                        .information__background.information__background--full-img.information__background--beige
+                            +testimonialBottom('testimonial--full', "src/blocks/testimonial/assets/img/testimonial-author2.jpg")
+                            img(src="src/blocks/information/assets/img/information-image-3.png").information__image.information__image--white.information__image--full.information__image--top
+                    .col-lg-6
+                        .information__content
+                            .information__content-heading
+                                h3.information__content-title.information__content-title--big Earn more with us!
+                            .information__list
+                                .information__list-items
+                                    p Reliable Income
+                                    span Lorem ipsum dolor sit amet. Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas lorem.
+                                .information__list-items
+                                    p Focus on Counseling
+                                    span Lorem ipsum dolor sit amet. Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas lorem.
+                                .information__list-items
+                                    p Work Flexibility
+                                    span Lorem ipsum dolor sit amet. Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas lorem.
+                            .information-button.information-button--offset
+                                a(href="#").button.button__green-gradient Get Started
+                                a(href="#").link-black Requirements
+                                a(href="#").link-black Directory
+
+        .benefits
+            .container
+                .row
+                    .col-lg-12
+                        .benefits__heading
+                            p.sub-title Features & Benefits
+                            h3.section-title Why Virtual Counseling?
+                    .col-lg-12
+                        .row
+                            .col-lg-4
+                                .benefits__list
+                                    .benefits__list-items
+                                        .benefits__icon
+                                            +iconSvg('20', '20', '0 0 20 20', 'icon-check')
+                                        p Work Flexibility
+                                        span Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas.
+                            .col-lg-4
+                                .benefits__list
+                                    .benefits__list-items
+                                        .benefits__icon
+                                            +iconSvg('20', '20', '0 0 20 20', 'icon-check')
+                                        p Reliable Income
+                                        span Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas.
+                            .col-lg-4
+                                .benefits__list
+                                    .benefits__list-items
+                                        .benefits__icon
+                                            +iconSvg('20', '20', '0 0 20 20', 'icon-check')
+                                        p Focus on Counseling
+                                        span Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas.
+
+        include ../blocks/counseling/counseling
+        include ../blocks/virtual-process/virtual-process
+        include ../blocks/patients-stories/patients-stories
+        include ../blocks/faq/faq
+        +areYou("Earn more ", "with Us!", "Get Started Today!")
+        //include ../blocks/are-you/are-you
+        include ../blocks/latest-news/latest-news

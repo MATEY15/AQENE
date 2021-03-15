@@ -1,0 +1,191 @@
+extends ../templates/main
+
+block variables
+    - var title = 'AQENE'
+
+
+block content
+    main.main
+        .header-banner
+            .header-banner__background
+                .container.header-banner__container
+                    .background-dot
+                    .background-gradient
+                .container.header-banner__background-buttom
+                    .background-dot--black
+            .container.header-banner__container
+                .row
+                    .col-md-6.col-sm-12.header-banner__content
+                        h1.header-banner__title Why work at AQENE?
+                        p.header-banner__desc Interested in joining the world’s largest mental health platform? You decide your schedule and how much you want to work, we’ll take care of the client referrals and billing details!
+                        .header-banner__button
+                            a(href="#").button.button__yellow.button__yellow--large Get Started
+                            a(href="#").link-white Requirements
+
+                    .col-md-6.col-sm-12.header-banner__image-wrapper
+                        img(src="src/blocks/header-banner/assets/img/header-banner-3.png").header-banner__image
+
+        .benefits
+            .container
+                .row
+                    .col-lg-12
+                        .benefits__heading
+                            p.sub-title Features & Benefits
+                            h3.section-title Why Virtual Counseling?
+                    .col-lg-12
+                        .row
+                            .col-lg-4
+                                .benefits__list
+                                    .benefits__list-items
+                                        .benefits__icon
+                                            +iconSvg('20', '20', '0 0 20 20', 'icon-check')
+                                        p Work Flexibility
+                                        span Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas.
+                            .col-lg-4
+                                .benefits__list
+                                    .benefits__list-items
+                                        .benefits__icon
+                                            +iconSvg('20', '20', '0 0 20 20', 'icon-check')
+                                        p Reliable Income
+                                        span Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas.
+                            .col-lg-4
+                                .benefits__list
+                                    .benefits__list-items
+                                        .benefits__icon
+                                            +iconSvg('20', '20', '0 0 20 20', 'icon-check')
+                                        p Focus on Counseling
+                                        span Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas.
+
+        .information
+            .information__image-container.information__image-container--default-offset
+                .row
+                    .col-lg-6
+                        .information__background.information__background--full-img.information__background--beige
+                            +testimonialBox('testimonial--absolute testimonial--white testimonial--top testimonial--position-el3', "src/blocks/testimonial/assets/img/testimonial-author2.jpg")
+                            +testimonialBox('testimonial--absolute testimonial--white testimonial--bottom testimonial--reverse testimonial--position-el4', "src/blocks/testimonial/assets/img/testimonial-author3.jpg")
+                            img(src="src/blocks/information/assets/img/information-image-3.png").information__image.information__image--white.information__image--full.information__image--top
+                    .col-lg-6
+                        .information__content
+                            .information__content-heading
+                                h3.information__content-title Simple, easy-to-use application - text, phone, video
+                            .information__content-text
+                                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas lorem. Integer consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas lorem. Integer consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                p Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas lorem. Integer consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas lorem. Integer consequat. Id egest egestas lorem.Integer consequat.
+                                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas lorem. Integer consequat.
+
+            .information__image-container.information__image-container--default-offset
+                .row
+                    .col-lg-6.order-1.order-lg-0
+                        .information__content.information-content--right
+                            .information__content-heading
+                                h3.information__content-title Who we are & #[br] Our culture
+                            .information__content-text
+                                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas lorem. Integer consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas lorem. Integer consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                p Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas lorem. Integer consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas lorem. Integer consequat. Id egest egestas lorem.Integer consequat.
+                                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas lorem. Integer consequat.
+
+                            .information__button
+                                a(href="#").link-black More About us
+                                a(href="#").link-black Our Team
+
+                    .col-lg-6.order-0.order-lg-1
+                        .information__background.information__background--right.information__background--full-img.information__background--blue
+                            img(src="src/blocks/information/assets/img/information-image-4.png").information__image.information__image--white.information__image--full.information__image--top
+
+
+        .patients-stories.patients-stories--inside-offset
+            .container
+                .row
+                    .col-lg-7.order-2.order-lg-1
+                        .patients-stories__video-slider
+                            .patients-stories__video-wrapper
+                                a(href="http://www.youtube.com/watch?v=0O2aH4XLbto").patients-stories__video.popup-youtube
+                                    img(src="src/blocks/patients-stories/assets/img/patients-stories__video1.jpg").patients-stories__video-image
+                                    i.patients-stories__video-play
+                            .patients-stories__video-wrapper
+                                a(href="http://www.youtube.com/watch?v=0O2aH4XLbto").patients-stories__video.popup-youtube
+                                    img(src="src/blocks/patients-stories/assets/img/patients-stories__video2.jpg").patients-stories__video-image
+                                    i.patients-stories__video-play
+
+                    .col-lg-5.order-1.order-lg-2
+                        .patients-stories__stories-wrapper
+                            .patients-stories__stories-head
+                                .patients-stories__stories-image
+                                    //img(src="src/blocks/patients-stories/assets/img/image-rating-reviews.png")
+                                    +testimonial('testimonial--big', "src/blocks/testimonial/assets/img/testimonial-author1.jpg")
+                                .patients-stories__stories-title
+                                    h3 Patients' stories
+                                    .patients-stories__stories-navigate
+                            .patients-stories__slider
+                                .patients-stories__slider-items
+                                    .patients-stories__rating
+                                        .rating
+                                            span.rating-item
+                                                +iconSvg('18', '17', '0 0 18 17', 'rating-star')
+                                            span.rating-item
+                                                +iconSvg('18', '17', '0 0 18 17', 'rating-star')
+                                            span.rating-item
+                                                +iconSvg('18', '17', '0 0 18 17', 'rating-star')
+                                            span.rating-item
+                                                +iconSvg('18', '17', '0 0 18 17', 'rating-star')
+                                            span.rating-item
+                                                +iconSvg('18', '17', '0 0 18 17', 'rating-star')
+                                    .patients-stories__stories
+                                        p.patients-stories__desc “Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Ut dignissim facil isis sodales ipsum dolor sit amet, conse ctetur adipiscing elit ipsum dolor sit amet, consectetur adipiscing elinteger elit ipsum dolor conse vehicula nulla ipsum dolor sit”
+                                        .patients-stories__name Theresa T, Toronto
+                                .patients-stories__slider-items
+                                    .patients-stories__rating
+                                        .rating
+                                            span.rating-item
+                                                +iconSvg('18', '17', '0 0 18 17', 'rating-star')
+                                            span.rating-item
+                                                +iconSvg('18', '17', '0 0 18 17', 'rating-star')
+                                            span.rating-item
+                                                +iconSvg('18', '17', '0 0 18 17', 'rating-star')
+                                            span.rating-item
+                                                +iconSvg('18', '17', '0 0 18 17', 'rating-star')
+                                            span.rating-item
+                                                +iconSvg('18', '17', '0 0 18 17', 'rating-star')
+                                    .patients-stories__stories
+                                        p.patients-stories__desc “Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Ut dignissim facil isis sodales ipsum dolor sit amet, conse ctetur adipiscing elit ipsum dolor sit amet, consectetur adipiscing elinteger elit ipsum dolor conse vehicula nulla ipsum dolor sit”
+                                        .patients-stories__name Theresa T, Toronto
+
+        .virtual-process.virtual-process--inside-offset
+            .virtual-process__line.virtual-process__line-position(style="background: url(src/blocks/virtual-process/assets/img/virtual-process-line.svg);")
+            .container
+                .row
+                    .col-lg-12
+                        .virtual-process__heading
+                            p.sub-title Virtual Counselling Process
+                            h3.section-title Quite Simple!
+                    .col-lg-4
+                        .virtual-process__item.virtual-process__item-el1
+                            .virtual-process__count 1
+                            .virtual-process__icon
+                                img(src="src/blocks/virtual-process/assets/img/virtual-process-1.svg")
+                            .virtual-process__content
+                                h4 Book a Consultation
+                                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas lorem. Integer consequat.
+                                .virtual-process__button
+                                    a(href="#").button.button__green-gradient Get Started
+                    .col-lg-4
+                        .virtual-process__item.virtual-process__item-el2
+                            .virtual-process__count 2
+                            .virtual-process__icon
+                                img(src="src/blocks/virtual-process/assets/img/virtual-process-2.svg")
+                            .virtual-process__content
+                                h4 Get Matched with a  therapist
+                                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas lorem. Integer consequat.
+                    .col-lg-4
+                        .virtual-process__item.virtual-process__item-el3
+                            .virtual-process__count 3
+                            .virtual-process__icon
+                                img(src="src/blocks/virtual-process/assets/img/virtual-process-3.svg")
+                            .virtual-process__content
+                                h4 Start Getting Quality Counseling
+                                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas lorem. Integer consequat.
+
+        include ../blocks/faq/faq
+        +areYou("Earn more ", "with Us!", "Get Started Today!", "are-you--default-offset")
+        //include ../blocks/are-you/are-you
+        include ../blocks/latest-news/latest-news

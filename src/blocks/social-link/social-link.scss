@@ -1,0 +1,15 @@
+@import "../../libs/scss/mixins";
+@import "../../blocks/base/variables";
+@import "../../blocks/base/media-queries";
+
+.socials__menu {
+  display: flex;
+  align-items: center;
+  a {
+    display: flex;
+    align-items: center;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}

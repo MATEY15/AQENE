@@ -1,0 +1,238 @@
+@import "../../libs/scss/mixins";
+@import "../../blocks/base/variables";
+@import "../../blocks/base/media-queries";
+
+$message: '.testimonial__message';
+$author: '.testimonial__author';
+
+.testimonial-comment {
+
+  &:not(:last-child) {
+    margin-bottom: 56px;
+  }
+
+  &__rating {
+    margin-bottom: 20px;
+  }
+
+  &__content {
+    @include fr();
+    font-size: 18px;
+    line-height: 28px;
+    color: #153257;
+    p {
+      @include fr();
+      font-style: italic;
+      font-size: 18px;
+      line-height: 28px;
+      color: #153257;
+    }
+  }
+  &__author {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 20px;
+  }
+}
+
+.testimonial {
+  max-width: 495px;
+  display: flex;
+  z-index: 10;
+
+  &--reverse {
+    flex-direction: row-reverse;
+
+    #{$author} {
+      margin-left: 15px;
+      margin-right: 0;
+    }
+  }
+
+  &--absolute {
+    position: absolute;
+  }
+
+  &--big {
+    .testimonial__message {
+      width: 350px;
+    }
+  }
+
+  &--white {
+    #{$message} {
+      background: #ffffff;
+      color: #153257;
+    }
+  }
+
+  &--mobile {
+    position: absolute;
+    top: 20%;
+    left: 33%;
+    @include mobile-large-screen {
+      top: 18%;
+      left: 40%;
+    }
+  }
+
+  &--top {
+    .testimonial__author {
+      top: -30px;
+      @include mobile-large-screen {
+        top: -15px;
+      }
+    }
+  }
+
+  &--bottom {
+    align-items: flex-end;
+
+    .testimonial__author {
+      top: 30px;
+      @include mobile-large-screen {
+        top: 15px;
+      }
+    }
+
+    .testimonial__message {
+      border-radius: 30px 30px 30px 0;
+      @include mobile-large-screen {
+        border-radius: 10px 10px 10px 0;
+      }
+    }
+  }
+
+  &__rating {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 18px;
+  }
+
+  .rating-star {
+    width: 11px;
+    height: 11px;
+  }
+
+  &__author {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-right: 15px;
+    @include mobile-large-screen {
+      width: 36px;
+      height: 36px;
+      margin-right: 10px;
+    }
+  }
+
+  &__author-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__message {
+    width: 280px;
+    background: #153257;
+    border-radius: 0 30px 30px 30px;
+    padding: 20px 15px;
+    color: #FFFFFF;
+
+    @include mobile-large-screen {
+      //width: 170px;
+      max-width: 240px;
+      border-radius: 0 10px 10px 10px;
+      padding: 12px 10px 7px;
+    }
+  }
+
+  &__desc {
+    @include fr();
+    font-style: italic;
+    @include font-size(12px, 14px, 480px, 1800px);
+    @include line-height(16px, 20px, 480px, 1800px);
+    text-align: center;
+    margin-bottom: 14px;
+  }
+
+  &__name {
+    @include fr();
+    @include font-size(12px, 14px, 480px, 1800px);
+    text-align: center;
+  }
+
+  // Position
+  &--position-el2 {
+    position: absolute;
+    bottom: 16%;
+    right: 10%;
+    @include laptop-large-screen {
+      bottom: 10%;
+      right: 5%;
+    }
+    @include table-large-screen {
+      bottom: 5%;
+      right: 2%;
+    }
+  }
+
+  &--position-el3 {
+    top: 22%;
+    right: 10vw;
+    @include laptop-large-screen {
+      top: 50px;
+    }
+    @include laptop-big-screen {
+      right: 2vw;
+    }
+    @include table-large-screen {
+      top: 22%;
+      right: 10vw;
+    }
+    @include mobile-large-screen {
+      top: 50px;
+    }
+  }
+
+  &--position-el4 {
+    top: 51%;
+    right: 55px;
+    @include laptop-large-screen {
+      top: auto;
+      bottom: 20px;
+    }
+    @include laptop-big-screen {
+      right: 2vw;
+    }
+    @include table-large-screen {
+      top: 51%;
+      right: 55px;
+      bottom: auto;
+    }
+    @include mobile-large-screen {
+      top: auto;
+      bottom: 20px;
+    }
+  }
+
+  &--position-el5 {
+    top: 120px;
+    right: 100px;
+  }
+
+  &--position-el6 {
+    left: 65px;
+    bottom: 90px;
+  }
+
+  &--position-el7 {
+    right: 100px;
+    bottom: 100px;
+  }
+
+}

@@ -1,0 +1,210 @@
+@import "../../libs/scss/mixins";
+@import "../../blocks/base/variables";
+@import "../../blocks/base/media-queries";
+
+button {
+  cursor: pointer;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  white-space: nowrap;
+  @include fb();
+  font-size: 16px;
+  color: #FFFFFF;
+  cursor: pointer;
+  @include trn(.25s);
+  @include table-large-screen {
+    font-size: 14px;
+  }
+
+  &__social {
+    min-height: 40px;
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-size: 13px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #153257;
+    background: #FFFFFF;
+
+    img {
+      margin-right: 10px;
+    }
+
+    &--facebook {
+      background: #4469B0;
+      color: #FFFFFF;
+    }
+    &--google {
+      border: 1px solid #A1ADBC;
+    }
+  }
+
+  &--gradient-green {
+    min-height: 40px;
+    padding: 8px 18px;
+    background: radial-gradient(100% 100% at 50% 0%, #2FAC86 0%, #0D846E 100%);
+    border: 1px solid #25BC8F;
+    color: #FFFFFF;
+  }
+
+  &__green-gradient {
+    min-height: 52px;
+    padding: 10px 22px 12px;
+    background: radial-gradient(100% 100% at 50% 0%, #2FAC86 0%, #0D846E 100%);
+    border: 1px solid #25BC8F;
+    color: #FFFFFF;
+  }
+
+  &__yellow {
+    @include fm();
+    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    color: #4637A5;
+    min-height: 50px;
+    padding: 10px 22px;
+    background: radial-gradient(100% 100% at 50% 0%, #FFD200 0%, #FFBE43 100%);
+
+    &--large {
+      min-height: 60px;
+      font-size: 22px;
+      line-height: 28px;
+      padding: 10px 22px 12px;
+      @include mobile-large-screen {
+        min-height: 50px;
+        padding: 10px 22px;
+        font-size: 16px;
+        line-height: normal;
+      }
+    }
+
+    &--big {
+      min-height: 86px;
+      font-size: 28px;
+      line-height: 28px;
+      padding: 10px 74px;
+      @include table-large-screen {
+        min-height: 50px;
+        padding: 10px 22px;
+        font-size: 16px;
+        line-height: normal;
+      }
+    }
+  }
+
+  &__yellow--icon-left {
+    margin-right: 10px;
+  }
+
+  &__yellow--icon-right {
+    margin-left: 10px;
+  }
+
+  &--border-green {
+    min-height: 52px;
+    border: 2px solid #25BC8F;
+    padding: 10px 24px 12px;
+    color: #25BC8F;
+
+    &--small {
+      min-height: 40px;
+      padding: 8px 14px 10px;
+      font-size: 14px;
+      color: #153257;
+    }
+
+    &:hover {
+      background: #25BC8F;
+      color: #ffffff;
+
+      &.button--arrow-right:after {
+        border-color: #fff;
+      }
+
+      &.button--arrow-left:before {
+        border-color: #fff;
+      }
+    }
+  }
+
+  &--arrow-right {
+    &:after {
+      position: relative;
+      top: 1px;
+      display: inline-block;
+      content: '';
+      width: 8px;
+      height: 8px;
+      border-style: solid;
+      border-width: 2px 2px 0 0;
+      border-color: #153257;
+      opacity: 1;
+      margin-left: 10px;
+      transform: rotate(
+                      45deg
+      );
+      @include trn(.2s);
+    }
+  }
+
+  &--arrow-left {
+    &:before {
+      position: relative;
+      top: 1px;
+      display: inline-block;
+      content: '';
+      width: 9px;
+      height: 9px;
+      border-style: solid;
+      border-width: 0 0 2px 2px;
+      border-color: #153257;
+      opacity: 1;
+      margin-right: 10px;
+      transform: rotate(
+                      45deg
+      );
+      @include trn(.2s);
+    }
+  }
+
+  &--empty {
+    min-height: 52px;
+    border: 2px solid #25BC8F;
+    padding: 10px 24px 12px;
+
+    &-small {
+      min-height: 44px;
+      padding: 7px 17px 8px;
+    }
+
+    @include table-large-screen {
+      min-height: 46px;
+      padding: 6px 18px 7px;
+    }
+
+    &:hover {
+      background: #25BC8F;
+      color: #ffffff;
+    }
+  }
+
+  &--border {
+    padding: 7px 0;
+    border-radius: 0;
+    border-bottom: 1px solid #54D7A0;
+  }
+
+  &--color-black {
+    color: #153257;
+  }
+
+}

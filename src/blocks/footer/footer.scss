@@ -1,0 +1,273 @@
+@import "../../libs/scss/mixins";
+@import "../../blocks/base/variables";
+@import "../../blocks/base/media-queries";
+
+.footer {
+  position: relative;
+  color: #FFFFFF;
+
+  &-background {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    .container {
+      position: relative;
+    }
+    &__shadow {
+      position: absolute;
+      top: 0;
+      left: 105px;
+      width: 480px;
+      height: 480px;
+      background: radial-gradient(50% 50% at 50% 50%, #5B4BBC 0%, #4637A5 100%);
+      border-radius: 50%;
+    }
+  }
+
+  &-head {
+    min-height: 120px;
+    background: #FFFFFF;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+
+    @include table-large-screen {
+      padding: 40px 0;
+    }
+  }
+
+  &-logo {
+    display: inline-block;
+    @include table-large-screen {
+      margin-bottom: 33px;
+    }
+  }
+
+  &-menu {
+    display: flex;
+    align-items: center;
+
+    @include table-large-screen {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    li {
+      &:not(:last-child) {
+        margin-right: 55px;
+        @include laptop-small-screen {
+          margin-right: 25px;
+        }
+        @include table-large-screen {
+          margin-right: 0;
+          margin-bottom: 40px;
+        }
+      }
+    }
+
+    a {
+      @include fb();
+      font-size: 14px;
+      line-height: 22px;
+      display: flex;
+      align-items: center;
+      text-transform: uppercase;
+      color: #153257;
+      @include trn(.2s);
+      &:hover {
+        color: #a1adbc;
+      }
+    }
+  }
+
+  &__socials {
+    display: flex;
+    justify-content: flex-end;
+    @include table-large-screen {
+      justify-content: flex-start;
+      margin-top: 40px;
+    }
+  }
+
+  // Foot
+
+  &-foot {
+    position: relative;
+    background: #4637A5;
+    padding: 54px 0 0px;
+    overflow: hidden;
+    @include table-large-screen {
+      padding-bottom: 20px;
+    }
+  }
+
+  &-content {
+    position: relative;
+  }
+
+  &-foot__menu {
+    li {
+      &:not(:last-child) {
+        margin-bottom: 20px;
+        @include table-large-screen {
+          max-width: initial;
+        }
+      }
+      @include table-large-screen {
+        margin-bottom: 20px;
+      }
+    }
+    a {
+      position: relative;
+      @include fr();
+      font-size: 16px;
+      line-height: 34px;
+      color: #FFFFFF;
+      &:hover {
+        &:before {
+          opacity: 0;
+          visibility: hidden;
+        }
+      }
+      &:before {
+        position: absolute;
+        bottom: 1px;
+        left: 0;
+        content: '';
+        width: 100%;
+        height: 1px;
+        background: #fff;
+        @include trn(.15s);
+      }
+    }
+  }
+
+  &-address {
+    margin-bottom: 30px;
+    &__item {
+      margin-bottom: 20px;
+    }
+    p {
+      @include fr();
+      font-size: 16px;
+      line-height: 24px;
+      color: #FFFFFF;
+    }
+  }
+
+  &-form--wrapper {
+    padding-top: 30px;
+    border-top: 1px solid #4B50C8;
+  }
+
+  &-form__title {
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 18px;
+  }
+
+  &-form {
+    position: relative;
+    background: #FFFFFF;
+    border-radius: 6px;
+    overflow: hidden;
+    &:before {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      content: '';
+      width: 100%;
+      height: 2px;
+      background: #54D7A0;
+      z-index: 1;
+    }
+    input {
+      position: relative;
+      height: 48px;
+      width: 100%;
+      padding: 10px  48px 10px 20px;
+      border-radius: 6px;
+      border: none;
+      background-color: transparent;
+      @include fr();
+      font-size: 16px;
+      color: #153257;
+      @include placeholder {
+        font-size: 16px;
+        color: #153257;
+      }
+    }
+
+    button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 48px;
+      width: 48px;
+    }
+  }
+
+  &-copy {
+    position: relative;
+    padding: 100px 0 30px;
+
+    @include table-large-screen {
+      padding: 20px 0 30px;
+    }
+
+    &__button {
+      text-align: center;
+      @include table-large-screen {
+        text-align: left;
+      }
+    }
+
+    &__text {
+      font-size: 14px;
+      line-height: 22px;
+    }
+
+    &__desc {
+      text-align: right;
+      @include table-large-screen {
+        text-align: left;
+        margin: 16px 0 34px;
+      }
+    }
+
+    &__menu {
+      display: flex;
+      li {
+        position: relative;
+        &:after {
+          content: '|';
+          color: #FFFFFF;
+          margin: 0 20px;
+        }
+        &:last-child {
+          &:after {
+            display: none;
+          }
+        }
+      }
+      a {
+        position: relative;
+        font-size: 14px;
+        line-height: 22px;
+        color: #FFFFFF;
+        &:before {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          content: '';
+          width: 100%;
+          height: 1px;
+          background: #25BC8F;
+        }
+      }
+    }
+  }
+
+}

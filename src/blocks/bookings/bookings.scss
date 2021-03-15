@@ -1,0 +1,139 @@
+@import "../../libs/scss/mixins";
+@import "../../blocks/base/variables";
+@import "../../blocks/base/media-queries";
+
+
+.bookings {
+  &__book {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 440px;
+    min-height: 84px;
+    background: #FFFFFF;
+    box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.12);
+    border-radius: 100px;
+    padding: 15px 30px;
+    padding-left: 40px;
+    margin: 0 auto 45px;
+    @include mobile-large-screen {
+      margin-bottom: 30px;
+      padding: 15px 20px;
+    }
+  }
+
+  &__book-contents {
+    p {
+      @include fr();
+      font-size: 20px;
+      line-height: 26px;
+      color: #153257;
+      @include mobile-large-screen {
+        font-size: 16px;
+        line-height: 22px;
+      }
+    }
+  }
+
+
+}
+
+// Calendar
+
+.calendar {
+  max-width: 356px;
+
+  thead tr:first-child td {
+    text-align: left;
+  }
+
+  .month-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 22px;
+    margin: 0 5px;
+    text-align: center;
+    &--prev {
+      transform: scale(-1);
+    }
+    &--next {}
+    svg {
+      @include mobile-small-screen {
+        width: 10px;
+        height: 18px;
+      }
+    }
+  }
+
+}
+
+
+#calendar {
+  width: 100%;
+  @include fr();
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  border-spacing: 0px;
+}
+
+#calendar tr.dn td {
+  @include fr();
+  font-size: 16px;
+  line-height: 22px;
+}
+
+//#calendar thead tr:last-child {
+//  font-size: small;
+//  color: #555555;
+//}
+//
+//#calendar thead tr:nth-child(1) td:nth-child(2) {
+//  color: #323232;
+//}
+
+#calendar thead tr:nth-child(1) td:nth-child(1):hover,
+#calendar thead tr:nth-child(1) td:nth-child(3):hover {
+  cursor: pointer;
+}
+
+#calendar thead td {
+  @include fr();
+  font-size: 16px;
+  line-height: 22px;
+  color: #153257;
+  height: 50px;
+  width: 50px;
+  user-select: none;
+}
+
+#calendar thead tr:first-child td {
+  height: auto;
+}
+
+#calendar tbody td {
+  @include fr();
+  font-size: 16px;
+  line-height: 22px;
+  color: #153257;
+  height: 50px;
+  width: 50px;
+}
+
+//#calendar tbody td:nth-child(n+6),
+//#calendar .holiday {
+//  color: #A1ADBC;
+//}
+#calendar tbody td.today span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #4637A5;
+  color: #fff;
+  width: 48px;
+  height: 48px;
+  @include brr(50%);
+  margin: auto;
+}

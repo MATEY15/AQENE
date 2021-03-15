@@ -1,0 +1,54 @@
+@import "../../libs/scss/mixins";
+@import "../../blocks/base/variables";
+@import "../../blocks/base/media-queries";
+
+$burger-active: ".burger-menu--active";
+
+.burger-menu {
+  position: relative;
+  flex-direction: column;
+  outline: none;
+  border: none;
+  min-height: 18px;
+  margin-left: 35px;
+  background: none;
+  display: none;
+
+  @include table-large-screen {
+    display: flex;
+  }
+
+  @include mobile-small-screen {
+    margin-left: 15px;
+  }
+
+  &__item {
+    width: 26px;
+    height: 3px;
+    background: #FFFFFF;
+    transition: all .12s ease-out;
+    margin-bottom: 6px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    #{$burger-active} & {
+      margin-bottom: 0;
+
+      &:nth-child(2) {
+        opacity: 0;
+        visibility: hidden;
+        transform: translate(16px, 7px);
+      }
+
+      &:first-child {
+        transform: rotate(45deg) translate(7px, 6px);
+      }
+
+      &:last-child {
+        transform: rotate(-45deg) translate(-2px, 2px);
+      }
+    }
+  }
+}

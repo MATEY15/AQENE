@@ -1,0 +1,101 @@
+@import "../../libs/scss/mixins";
+@import "../../blocks/base/variables";
+@import "../../blocks/base/media-queries";
+
+.contact {
+  color: #153257;
+
+  &--default-offset {
+    @include padding-top(30px, 70px, 480px, 1400px);
+    @include padding-bottom(30px, 55px, 480px, 1400px);
+  }
+
+  &__content {
+    @include table-large-screen {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__head {
+    margin-bottom: 24px;
+  }
+
+  &__head h1,
+  &__head h2,
+  &__head h3 {
+    @include fm();
+    @include font-size(38px, 70px, 480px, 1800px);
+    @include line-height(42px, 76px, 480px, 1800px);
+  }
+
+  &__info {
+
+  }
+
+  &__info-item {
+    display: flex;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__info-name {
+    min-width: 150px;
+    padding-right: 20px;
+    @include fm();
+    @include font-size(16px, 24px, 414px, 1800px);
+    @include line-height(20px, 30px, 414px, 1800px);
+    //font-size: 24px;
+    //line-height: 34px;
+    color: #4637A5;
+    @include mobile-small-screen {
+      min-width: 100px;
+    }
+  }
+
+  &__info-desc {
+    @include fm();
+    @include font-size(16px, 24px, 414px, 1800px);
+    @include line-height(20px, 30px, 414px, 1800px);
+    color: #153257;
+  }
+
+  &__button {
+    padding-top: 34px;
+  }
+
+  &__boxes {
+    width: 100%;
+    max-width: 680px;
+    margin-left: auto;
+    @include table-large-screen {
+      margin-left: 0;
+    }
+  }
+
+  //&__form {
+  //  background: #F7F8FF;
+  //  border-radius: 10px;
+  //
+  //  &--default-offset {
+  //    padding: 70px 80px 60px;
+  //  }
+  //}
+
+  &__form-head {
+    &--text-center {
+      text-align: center;
+    }
+  }
+
+  &__map {
+    position: relative;
+    display: none;
+  }
+  &__map-main {
+    width: 100%;
+    min-height: 570px;
+  }
+
+}

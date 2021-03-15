@@ -1,0 +1,59 @@
+extends ../templates/main
+
+block variables
+    - var title = 'AQENE'
+
+
+block content
+    main.main.main--default-offset
+        .contact.contact--default-offset
+            .container
+                .row
+                    .col-lg-6
+                        .contact__content
+                            .contact__head
+                                h1 Contact Us
+                            .contact__info
+                                .contact__info-item
+                                    .contact__info-name Phone:
+                                    .contact__info-desc 1-855-241-3325
+                                .contact__info-item
+                                    .contact__info-name Fax:
+                                    .contact__info-desc 905-418 - 0267
+                                .contact__info-item
+                                    .contact__info-name Address:
+                                    .contact__info-desc 180 Steeles Av. West, Units 7 #[br]8 Thornhill, Ontario L4J 2L1
+                            .contact__button
+                                button(data-name="Form")#button-contact.button.button__yellow.button__yellow--large Map
+
+                    .col-lg-6
+                        .contact__boxes
+                            .box-form.box-form--default-offset.box-form--position-right#contact-form
+                                .box-form__head.box-form__head--text-center
+                                    h3 Please use this contact form to email us
+                                form.box-form__main.box-form__main--flex-position
+                                    .box-form__items
+                                        select.select-main
+                                            option Title - please choose
+                                            option Title - please choose 1
+                                            option Title - please choose 2
+                                            option Title - please choose 3
+                                    .box-form__items.col-6
+                                        input(placeholder="First Name")
+                                    .box-form__items.col-6
+                                        input(placeholder="Last Name")
+                                    .box-form__items
+                                        select.select-main
+                                            option Type of request - please choose
+                                            option Type of request - please choose 1
+                                            option Type of request - please choose 2
+                                            option Type of request - please choose 3
+                                    .box-form__items
+                                        input(placeholder="Company Name")
+                                    .box-form__items
+                                        textarea(placeholder="Your message")
+                                    .box-form__items
+                                        button.button.button--border-green.button--color-black Submit
+
+                            .contact__map#contact-map
+                                iframe(class="contact__map-main" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2421.633611042226!2d-79.42777612113595!3d43.79726662347474!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b2c55698bc413%3A0x3a1a390ae40e4da1!2sAll%20Health%20Medical%20Centre!5e0!3m2!1sen!2sua!4v1615325293304!5m2!1sen!2sua" allowfullscreen="" loading="lazy")

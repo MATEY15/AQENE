@@ -1,0 +1,66 @@
+extends ../templates/main
+
+block variables
+    - var title = 'AQENE'
+
+
+block content
+    main.main
+        .header-banner
+            .header-banner__background
+                .container.header-banner__container
+                    .background-dot
+                    .background-gradient
+                .container.header-banner__background-buttom
+                    .background-dot--black
+            .container.header-banner__container
+                .row
+                    .col-md-6.col-sm-12.header-banner__content
+                        h1.header-banner__title What type of counseling are #[br]you looking for?
+                        p.header-banner__desc Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                        .header-banner__button
+                            a(href="#").button.button__yellow
+                                img(src="src/blocks/button/assets/img/button-img-1.svg").button__yellow--icon-left
+                                | Individual
+                            a(href="#").button.button__yellow
+                                img(src="src/blocks/button/assets/img/button-img-2.svg").button__yellow--icon-left
+                                | Couples
+                            a(href="#").button.button__yellow
+                                img(src="src/blocks/button/assets/img/button-img-3.svg").button__yellow--icon-left
+                                | Teen
+
+                    .col-md-6.col-sm-12.header-banner__image-wrapper
+                        img(src="src/blocks/header-banner/assets/img/header-banner-8.png").header-banner__image
+        .information
+            .container
+                .row
+                    .col-lg-6
+                        .information__background.information__background--beige
+                            +testimonialTop('testimonial--mobile', "src/blocks/testimonial/assets/img/testimonial-author1.jpg")
+                            img(src="src/blocks/information/assets/img/information-image-1.png").information__image.information__image--top
+                    .col-lg-6
+                        .information__content
+                            .information__content-heading
+                                p.sub-title Fastest solutions
+                                h3.information__content-title.information__content-title--big How we help
+                            .information__list
+                                .information__list-items
+                                    p Mental health
+                                    span Lorem ipsum dolor sit amet. Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas lorem.
+                                .information__list-items
+                                    p Communicate your way
+                                    span Lorem ipsum dolor sit amet. Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas lorem.
+                                .information__list-items
+                                    p Therapy when you need it
+                                    span Lorem ipsum dolor sit amet. Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas lorem.
+                            .information-button.information-button--offset
+                                a(href="#").link-black Learn more
+                                    a(href="#").link-black Directory
+                                    a(href="#").button.button__green-gradient Book Consultation
+
+        include ../blocks/benefits/benefits
+        include ../blocks/counseling/counseling
+        include ../blocks/virtual-process/virtual-process
+        include ../blocks/patients-stories/patients-stories
+        include ../blocks/faq/faq
+        +areYou("Question?", "Give us a call", "647.478.7508", "are-you--inside-offset")

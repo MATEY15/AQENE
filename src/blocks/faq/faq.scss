@@ -1,0 +1,115 @@
+@import "../../libs/scss/mixins";
+@import "../../blocks/base/variables";
+@import "../../blocks/base/media-queries";
+
+.faq {
+  background: #EFFFF8;
+  padding: 110px 0 90px;
+
+  @include mobile-large-screen {
+    padding: 40px 0 45px;
+  }
+
+  &--bottom-offset {
+    @include margin-bottom(70px, 140px, 480px, 1400px);
+  }
+
+  &__heading {
+    margin-bottom: 70px;
+    @include mobile-large-screen {
+      margin-bottom: 30px;
+    }
+  }
+
+  .sub-title {
+
+  }
+
+  .section-title {
+
+  }
+
+  &__list {
+    @include fm();
+    font-size: 20px;
+    line-height: 28px;
+    color: #153257;
+    max-width: 440px;
+    cursor: pointer;
+    @include table-large-screen {
+      margin-bottom: 25px;
+      max-width: 100%;
+    }
+  }
+
+  &__list-item {
+    position: relative;
+    padding: 25px 30px;
+    border-radius: 10px;
+    @include trn(.2s);
+  }
+
+  &__button {
+    padding-top: 35px;
+  }
+
+  &__list-item--active {
+    background: #FFFFFF;
+    box-shadow: 0px 20px 30px rgba(31, 57, 63, 0.1);
+
+    .faq__list-icon {
+      &:before {
+        display: none;
+      }
+
+      &:after {
+        background: #4637A5;
+      }
+    }
+  }
+
+  &__list-icon {
+    position: absolute;
+    top: 50%;
+    right: 34px;
+    width: 10px;
+    height: 10px;
+    @include tt(0, -50%);
+
+    &:after,
+    &:before {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      content: '';
+      display: block;
+      background: #A1ADBC;
+      @include tt(-50%, -50%);
+      transition: all .2s ease-out;
+    }
+
+    &:after {
+      width: 10px;
+      height: 2px;
+    }
+
+    &:before {
+      height: 10px;
+      width: 2px;
+    }
+  }
+}
+
+
+.content-main {
+  @include padding-bottom(30px, 70px, 480px, 1800px);
+
+  .title-page {
+    @include margin-bottom(20px, 36px, 480px, 1800px);
+  }
+
+  &__accordion {
+    max-width: 920px;
+  }
+
+}

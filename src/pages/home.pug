@@ -1,0 +1,44 @@
+extends ../templates/main
+
+block variables
+    - var title = 'AQENE'
+
+
+block content
+    main.main
+        include ../blocks/header-banner/header-banner
+        include ../blocks/about/about
+        .information
+            .container
+                .row
+                    .col-lg-6
+                        .information__background.information__background--beige
+                            +testimonialTop('testimonial--mobile', "src/blocks/testimonial/assets/img/testimonial-author1.jpg")
+                            img(src="src/blocks/information/assets/img/information-image-1.png").information__image.information__image--top
+                    .col-lg-6
+                        .information__content
+                            .information__content-heading
+                                p.sub-title Fastest solutions
+                                h3.information__content-title.information__content-title--big How we help
+                            .information__list
+                                .information__list-items
+                                    p Mental health
+                                    span Lorem ipsum dolor sit amet. Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas lorem.
+                                .information__list-items
+                                    p Communicate your way
+                                    span Lorem ipsum dolor sit amet. Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas lorem.
+                                .information__list-items
+                                    p Therapy when you need it
+                                    span Lorem ipsum dolor sit amet. Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas lorem.
+                            .information-button.information-button--offset
+                                a(href="#").link-black Learn more
+                                    a(href="#").link-black Directory
+                                    a(href="#").button.button__green-gradient Book Consultation
+
+        include ../blocks/benefits/benefits
+        include ../blocks/counseling/counseling
+        include ../blocks/virtual-process/virtual-process
+        include ../blocks/patients-stories/patients-stories
+        include ../blocks/faq/faq
+        include ../blocks/are-you/are-you
+        include ../blocks/latest-news/latest-news

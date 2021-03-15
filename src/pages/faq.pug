@@ -1,0 +1,46 @@
+extends ../templates/main
+
+block variables
+    - var title = 'AQENE'
+
+
+block content
+    main.main.main--default-offset
+
+        include ../blocks/breadcrumbs/breadcrumbs
+
+        .content-main
+            .container
+                .row
+                    .col-lg-12
+                        .heading.content-main__heading
+                            h1.title-small.title-small--default-offset.title-small--center Frequently asked questions
+                    .col-lg-9.order-1.order-lg-0
+
+                        .tabs-content__wrapper
+                            .tabs-content.tabs-content--active.tabs-content--effect
+                                .content-main__accordion
+                                    +accordion('Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint?', 'The amount of time needed for the scan depends on the size of the property. For an average-sized home, it should take about an hour and a half to two hours to complete the scan.')
+                                    +accordion('Velit officia consequat duis enim velit mollit?', 'The amount of time needed for the scan depends on the size of the property. For an average-sized home, it should take about an hour and a half to two hours to complete the scan.')
+                                    +accordion('Exercitation veniam consequat sunt nostrud amet?', 'The amount of time needed for the scan depends on the size of the property. For an average-sized home, it should take about an hour and a half to two hours to complete the scan.')
+                                    +accordion('Mollit non deserunt ullamco est sit aliqua dolorofficia consequat duis?', 'The amount of time needed for the scan depends on the size of the property. For an average-sized home, it should take about an hour and a half to two hours to complete the scan.')
+                                    +accordion('Velit officia consequat duis enim velit mollit?', 'The amount of time needed for the scan depends on the size of the property. For an average-sized home, it should take about an hour and a half to two hours to complete the scan.')
+                                    +accordion('Exercitation veniam consequat sunt nostrud amet?', 'The amount of time needed for the scan depends on the size of the property. For an average-sized home, it should take about an hour and a half to two hours to complete the scan.')
+                                    +accordion('Mollit non deserunt ullamco est sit aliqua dolorofficia consequat duis?', 'The amount of time needed for the scan depends on the size of the property. For an average-sized home, it should take about an hour and a half to two hours to complete the scan.')
+                                    +accordion('Mollit non deserunt ullamco est sit aliqua dolorofficia consequat duis?', 'The amount of time needed for the scan depends on the size of the property. For an average-sized home, it should take about an hour and a half to two hours to complete the scan.')
+                            .tabs-content
+                                .content-main__accordion
+                                    +accordion('Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint?', 'The amount of time needed for the scan depends on the size of the property. For an average-sized home, it should take about an hour and a half to two hours to complete the scan.')
+                                    +accordion('Velit officia consequat duis enim velit mollit?', 'The amount of time needed for the scan depends on the size of the property. For an average-sized home, it should take about an hour and a half to two hours to complete the scan.')
+                                    +accordion('Exercitation veniam consequat sunt nostrud amet?', 'The amount of time needed for the scan depends on the size of the property. For an average-sized home, it should take about an hour and a half to two hours to complete the scan.')
+                                    +accordion('Mollit non deserunt ullamco est sit aliqua dolorofficia consequat duis?', 'The amount of time needed for the scan depends on the size of the property. For an average-sized home, it should take about an hour and a half to two hours to complete the scan.')
+                                    +accordion('Velit officia consequat duis enim velit mollit?', 'The amount of time needed for the scan depends on the size of the property. For an average-sized home, it should take about an hour and a half to two hours to complete the scan.')
+                                    +accordion('Exercitation veniam consequat sunt nostrud amet?', 'The amount of time needed for the scan depends on the size of the property. For an average-sized home, it should take about an hour and a half to two hours to complete the scan.')
+                                    +accordion('Mollit non deserunt ullamco est sit aliqua dolorofficia consequat duis?', 'The amount of time needed for the scan depends on the size of the property. For an average-sized home, it should take about an hour and a half to two hours to complete the scan.')
+                                    +accordion('Mollit non deserunt ullamco est sit aliqua dolorofficia consequat duis?', 'The amount of time needed for the scan depends on the size of the property. For an average-sized home, it should take about an hour and a half to two hours to complete the scan.')
+                    .col-lg-3.order-0.order-lg-1
+                        .tabs-sidebar
+                            li.menu-sidebar__list.menu-sidebar__list--active
+                                span Patients
+                            li.menu-sidebar__list
+                                span Therapists

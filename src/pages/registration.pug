@@ -1,0 +1,67 @@
+extends ../templates/main
+
+block variables
+    - var title = 'AQENE'
+
+
+block content
+    main.main.main--default-offset
+
+        .page-wrapper.page-wrapper--default-offset
+
+            .title-inside.title-inside--bottom-offset.title-inside--position-center
+                h1 Account Registration
+
+            .box-form.box-form--default-offset.box-form--position-center
+                    .box-form__head.box-form__head--text-center
+                        h3 Create your private account
+                    .box-form__social-button
+                        a(href="#").button.button__social.button__social--facebook
+                            img(src="/images/icons/facebook.svg")
+                            | Continue with Facebook
+                        a(href="#").button.button__social.button__social--google
+                            img(src="/images/icons/google.svg")
+                            | Continue with Google
+                    .box-form__main
+                        .box-form__items
+                            input(placeholder="First name (or nickname)")
+                        .box-form__items
+                            input(placeholder="Email")
+                        .box-form__items
+                            input(placeholder="Confirm Email")
+                        .box-form__items
+                            input(placeholder="Create password")
+                        .box-form__items
+                            label.checkbox-button
+                                input.checkbox-button__input(type="checkbox" required="")
+                                .checkbox-button__text
+                                    .checkbox-button__status
+                                    p I agree to the #[a(href="#").link-black terms and conditions]
+
+                    .form-step__navigate
+                        button.form-step__button.form-step__button--prev Go back
+                        button.form-step__button.form-step__button--next.form-step__button--change Next
+
+
+            br
+            br
+            br
+
+            .box-form.box-form--default-offset.box-form--position-center
+                .box-form__content.box-form__content--center
+                    .box-form__head.box-form__head--text-center
+                        h3 We just sent a varification code to email@mail.com
+                    p Ut dignissim facil isis sodales. Integer vehicula nulla felis, id egest egestas loremonsec tetur adipiscing. Integer consequatorem ipsum dolor sit amet.
+                .box-form__main
+                    .box-form__verification
+                        input(type="text" placeholder="Enter verification code")
+                        button.button.button--gradient-green Submit
+
+                    .box-form__items
+                        a(href="#").link-black Resend verification code
+                        a(href="#").link-black Change email
+
+                .form-step__navigate
+                    button.form-step__button.form-step__button--prev Go back
+                    button.form-step__button.form-step__button--next.form-step__button--change Next
+

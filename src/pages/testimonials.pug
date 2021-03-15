@@ -1,0 +1,72 @@
+extends ../templates/main
+
+block variables
+    - var title = 'AQENE'
+
+
+block content
+    main.main.main--default-offset
+
+        .breadcrumbs
+            .container
+                ul.breadcrumbs__list
+                    +listBreadcrumbs("Home")
+                    +listBreadcrumbs("Resources")
+                    +listBreadcrumbs("Testimonials", true)
+
+        .content-main
+            .container
+                .row
+                    .col-lg-12
+                        .heading.content-main__heading
+                            h1.title-small.title-small--default-offset.title-small--center Testimonials
+                    .col-lg-9.order-1.order-lg-0
+                        .tabs-content__wrapper
+                            .tabs-content.tabs-content--active.tabs-content--effect
+                                .content-main__accordion
+                                    .testimonial-comment
+                                        .testimonial-comment__rating
+                                            include ../blocks/rating/rating
+                                        .testimonial-comment__content
+                                            p “Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Ut dignissim facil isis sodales ipsum dolor sit amet, conse ctetur adipiscing elit ipsum dolor sit amet, consectetur adipiscing elinteger elit ipsum dolor conse vehicula nulla ipsum dolor ipsum dolor sit amet, consec tetur adipiscing elit. Ut dignissim facil isis sodales ipsum dolor sit amet, conse ctetur adipiscing elit ipsum dolor sit amet, consectetur adipiscing elinteger elit ipsum dolor conse vehicula nulla ipsum”
+                                            span.testimonial-comment__author Theresa T, Toronto
+                                    .testimonial-comment
+                                        .testimonial-comment__rating
+                                            include ../blocks/rating/rating
+                                        .testimonial-comment__content
+                                            p “Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Ut dignissim facil isis sodales ipsum dolor sit amet, conse ctetur adipiscing elit ipsum dolor sit amet, consectetur adipiscing elinteger elit ipsum dolor conse vehicula nulla ipsum dolor ipsum dolor sit amet, consec tetur adipiscing elit. Ut dignissim facil isis sodales ipsum dolor sit amet, conse ctetur adipiscing elit ipsum dolor sit amet, consectetur adipiscing elinteger elit ipsum dolor conse vehicula nulla ipsum”
+                                            span.testimonial-comment__author Theresa T, Toronto
+                                    .testimonial-comment
+                                        .testimonial-comment__rating
+                                            include ../blocks/rating/rating
+                                        .testimonial-comment__content
+                                            p “Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Ut dignissim facil isis sodales ipsum dolor sit amet, conse ctetur adipiscing elit ipsum dolor sit amet, consectetur adipiscing elinteger elit ipsum dolor conse vehicula nulla ipsum dolor ipsum dolor sit amet, consec tetur adipiscing elit. Ut dignissim facil isis sodales ipsum dolor sit amet, conse ctetur adipiscing elit ipsum dolor sit amet, consectetur adipiscing elinteger elit ipsum dolor conse vehicula nulla ipsum”
+                                            span.testimonial-comment__author Theresa T, Toronto
+
+                            .tabs-content
+                                .content-main__accordion
+                                    .testimonial-comment
+                                        .testimonial-comment__rating
+                                            include ../blocks/rating/rating
+                                        .testimonial-comment__content
+                                            p “Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Ut dignissim facil isis sodales ipsum dolor sit amet, conse ctetur adipiscing elit ipsum dolor sit amet, consectetur adipiscing elinteger elit ipsum dolor conse vehicula nulla ipsum dolor ipsum dolor sit amet, consec tetur adipiscing elit. Ut dignissim facil isis sodales ipsum dolor sit amet, conse ctetur adipiscing elit ipsum dolor sit amet, consectetur adipiscing elinteger elit ipsum dolor conse vehicula nulla ipsum”
+                                            span.testimonial-comment__author Theresa T, Toronto
+                                    .testimonial-comment
+                                        .testimonial-comment__rating
+                                            include ../blocks/rating/rating
+                                        .testimonial-comment__content
+                                            p “Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Ut dignissim facil isis sodales ipsum dolor sit amet, conse ctetur adipiscing elit ipsum dolor sit amet, consectetur adipiscing elinteger elit ipsum dolor conse vehicula nulla ipsum dolor ipsum dolor sit amet, consec tetur adipiscing elit. Ut dignissim facil isis sodales ipsum dolor sit amet, conse ctetur adipiscing elit ipsum dolor sit amet, consectetur adipiscing elinteger elit ipsum dolor conse vehicula nulla ipsum”
+                                            span.testimonial-comment__author Theresa T, Toronto
+                                    .testimonial-comment
+                                        .testimonial-comment__rating
+                                            include ../blocks/rating/rating
+                                        .testimonial-comment__content
+                                            p “Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Ut dignissim facil isis sodales ipsum dolor sit amet, conse ctetur adipiscing elit ipsum dolor sit amet, consectetur adipiscing elinteger elit ipsum dolor conse vehicula nulla ipsum dolor ipsum dolor sit amet, consec tetur adipiscing elit. Ut dignissim facil isis sodales ipsum dolor sit amet, conse ctetur adipiscing elit ipsum dolor sit amet, consectetur adipiscing elinteger elit ipsum dolor conse vehicula nulla ipsum”
+                                            span.testimonial-comment__author Theresa T, Toronto
+
+                    .col-lg-3.order-0.order-lg-1
+                        .tabs-sidebar
+                            li.menu-sidebar__list.menu-sidebar__list--active
+                                span Patients
+                            li.menu-sidebar__list
+                                span Therapists

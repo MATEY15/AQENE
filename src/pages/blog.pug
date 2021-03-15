@@ -1,0 +1,51 @@
+extends ../templates/main
+
+block variables
+    - var title = 'AQENE'
+
+
+block content
+    main.main.main--default-offset
+
+        .breadcrumbs
+            .container
+                ul.breadcrumbs__list
+                    +listBreadcrumbs("Home")
+                    +listBreadcrumbs("Resources")
+                    +listBreadcrumbs("Blog", true)
+
+        .content-main
+            .container
+                .post-preview
+                    .post-preview__image
+                        img(src="src/blocks/resources/assets/img/resources2.jpg")
+                    .post-preview__post
+                        .post-preview__post-date 07.07.2020
+                        .post-preview__post-content
+                            .post-preview__post-name
+                                a(href="") Not feeling well? #[br]Have a health concern? Need a prescription filled?
+                            .post-preview__post-desc
+                                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas lorem. Integer consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                p Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas lorem. Integer consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas lorem. Integer consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+        .posts-wrapper.posts-wrapper--bottom-offset
+            .container
+                .row
+                    .col-xxl-3.col-lg-4.col-md-6
+                        +posts("src/blocks/latest-news/assets/img/latest-news1.jpg")
+                    .col-xxl-3.col-lg-4.col-md-6
+                        +posts("src/blocks/latest-news/assets/img/latest-news2.jpg")
+                    .col-xxl-3.col-lg-4.col-md-6
+                        +posts("src/blocks/latest-news/assets/img/latest-news3.jpg")
+                    .col-xxl-3.col-lg-4.col-md-6
+                        +posts("src/blocks/latest-news/assets/img/latest-news4.jpg")
+                    .col-xxl-3.col-lg-4.col-md-6
+                        +posts("src/blocks/latest-news/assets/img/latest-news1.jpg")
+                    .col-xxl-3.col-lg-4.col-md-6
+                        +posts("src/blocks/latest-news/assets/img/latest-news2.jpg")
+                    .col-xxl-3.col-lg-4.col-md-6
+                        +posts("src/blocks/latest-news/assets/img/latest-news3.jpg")
+                    .col-xxl-3.col-lg-4.col-md-6
+                        +posts("src/blocks/latest-news/assets/img/latest-news4.jpg")
+            .directory__load-wrapper
+                a(href="#").directory__load.icon-load
