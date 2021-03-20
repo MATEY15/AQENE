@@ -6,6 +6,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <link rel="shortcut icon" href="../../images/favicon/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="../../images/favicon/apple-touch-icon.png" type="image/x-icon">
     <link rel="shortcut icon" href="../../images/favicon/apple-touch-icon-72x72.png" type="image/x-icon">
@@ -15,7 +16,7 @@
   <body>
 <header class="header">
   <div class="container header__container">
-    <div class="header__logo"><a class="logo" href="#"><img class="logo__image" src="images/logo.svg"></a></div>
+    <div class="header__logo"><a class="logo" href="#"><img class="logo__image" src="images/logo.svg" alt="Logo"></a></div>
     <div class="header__navigation">
       <div class="header__menu-wrapper">
         <!--.header__navigation-scroll-->
@@ -44,21 +45,17 @@
                 <div class="box-form__head">
                   <h3>Login with social media account</h3>
                 </div>
-                <div class="box-form__social-button"><a class="button button__social button__social--facebook" href="#"><img src="/images/icons/facebook.svg">Continue with Facebook</a><a class="button button__social button__social--google" href="#"><img src="/images/icons/google.svg">Continue with Google</a></div>
+                <div class="box-form__social-button"><a class="button button__social button__social--facebook" href="#"><img src="/images/icons/facebook.svg" alt="facebook">Continue with Facebook</a><a class="button button__social button__social--google" href="#"><img src="/images/icons/google.svg" alt="google">Continue with Google</a></div>
                 <div class="box-form__main">
                   <div class="box-form__items">
-                    <input placeholder="Email">
+                    <input type="text" placeholder="Email">
                   </div>
                   <div class="box-form__items">
-                    <input placeholder="Password">
+                    <input type="text" placeholder="Password">
                   </div>
                   <div class="box-form__items box-form__flex-center">
                     <label class="checkbox-button">
-                      <input class="checkbox-button__input" type="checkbox" required="">
-                      <div class="checkbox-button__text">
-                        <div class="checkbox-button__status"></div>
-                        <p>Keep me logged in</p>
-                      </div>
+                      <input class="checkbox-button__input" type="checkbox" required=""><span class="checkbox-button__text"><span class="checkbox-button__status"></span><span>Keep me logged in</span></span>
                     </label><a class="link-black" href="#">Forgot pasword?</a>
                   </div>
                 </div>
@@ -70,7 +67,7 @@
             <div class="col-lg-7">
               <div class="user-login">
                 <div class="user-login__item">
-                  <div class="user-login__image"><img src="src/blocks/suggested/assets/img/suggested1.jpg"></div>
+                  <div class="user-login__image"><img src="src/blocks/suggested/assets/img/suggested1.jpg" alt="Suggested"></div>
                   <div class="user-login__name">
                     <h3>PATIENTS</h3>
                   </div>
@@ -79,7 +76,7 @@
                   </div>
                 </div>
                 <div class="user-login__item">
-                  <div class="user-login__image"><img src="src/blocks/suggested/assets/img/suggested1.jpg"></div>
+                  <div class="user-login__image"><img src="src/blocks/suggested/assets/img/suggested1.jpg" alt="Suggested"></div>
                   <div class="user-login__name">
                     <h3>THERAPISTS</h3>
                   </div>
@@ -97,7 +94,7 @@
       <div class="footer-head">
         <div class="container">
           <div class="row">
-            <div class="col-xl-3 col-lg-2"><a class="footer-logo" href="#"><img class="footer-logo__image" src="images/footer-logo.svg"></a></div>
+            <div class="col-xl-3 col-lg-2"><a class="footer-logo" href="#"><img class="footer-logo__image" src="images/footer-logo.svg" alt="Logo footer"></a></div>
             <div class="col-xl-7 col-lg-7">
               <ul class="footer-menu">
                 <li><a href="#">Patients</a></li>
@@ -109,7 +106,7 @@
             </div>
             <div class="col-xl-2 col-lg-3">
               <div class="footer__socials">
-<div class="socials__menu"><a href="#"><img src="src/blocks/social-link/assets/img/twitter.svg"></a><a href="#"><img src="src/blocks/social-link/assets/img/facebook.svg"></a><a href="#"><img src="src/blocks/social-link/assets/img/linkedin.svg"></a><a href="#"><img src="src/blocks/social-link/assets/img/youtube.svg"></a></div>
+<div class="socials__menu"><a href="#"><img src="src/blocks/social-link/assets/img/twitter.svg" alt="twitter"></a><a href="#"><img src="src/blocks/social-link/assets/img/facebook.svg" alt="facebook"></a><a href="#"><img src="src/blocks/social-link/assets/img/linkedin.svg" alt="linkedin"></a><a href="#"><img src="src/blocks/social-link/assets/img/youtube.svg" alt="youtube"></a></div>
               </div>
             </div>
           </div>
@@ -162,7 +159,7 @@
               <div class="footer-form--wrapper">
                 <div class="footer-form__title">Join our newsletter</div>
                 <form class="footer-form">
-                  <input type="mail" placeholder="Email address">
+                  <input type="text" placeholder="Email address">
                   <button>
                     <svg class="icon-send" width="16" height="8" viewBox="0 0 16 8">
                       <use xlink:href="/images/icons/sprites.svg#icon-send"></use>

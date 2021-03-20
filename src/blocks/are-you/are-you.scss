@@ -27,10 +27,23 @@
     box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.12);
     border-radius: 100px;
 
+    &:after {
+      content: '';
+      min-height: inherit;
+      font-size: 0;
+    }
+
     @include mobile-large-screen {
       min-height: 90px;
       flex-wrap: wrap;
     }
+
+    @include mobile-small-screen {
+      display: block;
+      text-align: center;
+      padding: 20px;
+    }
+
   }
 
   &__start {

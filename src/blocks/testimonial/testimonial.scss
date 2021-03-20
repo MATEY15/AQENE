@@ -20,6 +20,7 @@ $author: '.testimonial__author';
     font-size: 18px;
     line-height: 28px;
     color: #153257;
+
     p {
       @include fr();
       font-style: italic;
@@ -28,6 +29,7 @@ $author: '.testimonial__author';
       color: #153257;
     }
   }
+
   &__author {
     display: inline-block;
     font-size: 14px;
@@ -74,6 +76,11 @@ $author: '.testimonial__author';
     @include mobile-large-screen {
       top: 18%;
       left: 40%;
+    }
+    @include mobile-small-screen {
+      top: -3%;
+      left: auto;
+      right: 0;
     }
   }
 

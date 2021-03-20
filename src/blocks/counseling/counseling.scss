@@ -95,6 +95,7 @@
         &:after {
           position: absolute;
           top: 100%;
+          left: 0;
           height: 40px;
           width: 100%;
           content: '';
@@ -109,6 +110,7 @@
         &:before {
           position: absolute;
           top: calc(100% + 30px);
+          left: 12%;
           height: 10px;
           width: 75%;
           content: '';

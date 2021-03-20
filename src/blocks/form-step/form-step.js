@@ -40,7 +40,7 @@ function stepsBox() {
     createIndicators();
 
     function createIndicators() {
-        for (let index of $stepItems) {
+        for (let index = 0; index < $stepItems.length; index++) {
             let stepIndicator = document.createElement('span');
             stepIndicator.className = 'form-step__indicator-item';
             $stepIndicator.appendChild(stepIndicator)

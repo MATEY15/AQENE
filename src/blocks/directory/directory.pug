@@ -1,7 +1,7 @@
 mixin directoryItem(image)
     .directory__card
         .directory__image-wrapper
-            img.directory__image(src=image)
+            img.directory__image(src=image alt="Directory")
         .directory__desc
             h4.directory__name Dr. John Doe
             .directory__desc-text
@@ -41,10 +41,12 @@ mixin directoryItem(image)
             .col-lg-3.order-0.order-lg-1
                 .sidebar
                     .menu-sidebar-toggle
-                        span
-                        span
-                        span
-                    .menu-sidebar.menu-sidebar__mobile-hide
+                        | menu
+                        i.accordion__title-icon.
+                            <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.41 0.589965L6 5.16997L10.59 0.589966L12 1.99997L6 7.99997L-6.16331e-08 1.99997L1.41 0.589965Z"/>
+                            </svg>
+                    ul.menu-sidebar.menu-sidebar__mobile-hide
                         li.menu-sidebar__list.menu-sidebar__list--active
                             a(href="#") All specialties
                         li.menu-sidebar__list

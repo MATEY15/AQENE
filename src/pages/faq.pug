@@ -18,6 +18,12 @@ block content
                     .col-lg-9.order-1.order-lg-0
 
                         .tabs-content__wrapper
+                            .tabs-content__tab-item.tabs-content__tab-item--active
+                                | Patients
+                                i.accordion__title-icon.
+                                    <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.41 0.589965L6 5.16997L10.59 0.589966L12 1.99997L6 7.99997L-6.16331e-08 1.99997L1.41 0.589965Z"/>
+                                    </svg>
                             .tabs-content.tabs-content--active.tabs-content--effect
                                 .content-main__accordion
                                     +accordion('Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint?', 'The amount of time needed for the scan depends on the size of the property. For an average-sized home, it should take about an hour and a half to two hours to complete the scan.')
@@ -28,6 +34,13 @@ block content
                                     +accordion('Exercitation veniam consequat sunt nostrud amet?', 'The amount of time needed for the scan depends on the size of the property. For an average-sized home, it should take about an hour and a half to two hours to complete the scan.')
                                     +accordion('Mollit non deserunt ullamco est sit aliqua dolorofficia consequat duis?', 'The amount of time needed for the scan depends on the size of the property. For an average-sized home, it should take about an hour and a half to two hours to complete the scan.')
                                     +accordion('Mollit non deserunt ullamco est sit aliqua dolorofficia consequat duis?', 'The amount of time needed for the scan depends on the size of the property. For an average-sized home, it should take about an hour and a half to two hours to complete the scan.')
+
+                            .tabs-content__tab-item
+                                | Therapists
+                                i.accordion__title-icon.
+                                    <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.41 0.589965L6 5.16997L10.59 0.589966L12 1.99997L6 7.99997L-6.16331e-08 1.99997L1.41 0.589965Z"/>
+                                    </svg>
                             .tabs-content
                                 .content-main__accordion
                                     +accordion('Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint?', 'The amount of time needed for the scan depends on the size of the property. For an average-sized home, it should take about an hour and a half to two hours to complete the scan.')
@@ -39,7 +52,7 @@ block content
                                     +accordion('Mollit non deserunt ullamco est sit aliqua dolorofficia consequat duis?', 'The amount of time needed for the scan depends on the size of the property. For an average-sized home, it should take about an hour and a half to two hours to complete the scan.')
                                     +accordion('Mollit non deserunt ullamco est sit aliqua dolorofficia consequat duis?', 'The amount of time needed for the scan depends on the size of the property. For an average-sized home, it should take about an hour and a half to two hours to complete the scan.')
                     .col-lg-3.order-0.order-lg-1
-                        .tabs-sidebar
+                        ul.tabs-sidebar
                             li.menu-sidebar__list.menu-sidebar__list--active
                                 span Patients
                             li.menu-sidebar__list

@@ -15,10 +15,18 @@
 
             .col-lg-7
                 .faq__wrapper
+                    .faq__tabs-item.faq__tabs-item--active
+                        | Patients
+                        .faq__list-icon
+
                     .faq__tabs
                         include ../accordion/accordion
                         .faq__button
                             a(href="#").link-black View all questions
+                    .faq__tabs-item
+                        | HCPs
+                        .faq__list-icon
+
                     .faq__tabs
                         include ../accordion/accordion
                         .faq__button

@@ -14,7 +14,7 @@ block content
                     .col-lg-6
                         .information__background.information__background--beige
                             +testimonialTop('testimonial--mobile', "src/blocks/testimonial/assets/img/testimonial-author1.jpg")
-                            img(src="src/blocks/information/assets/img/information-image-1.png").information__image.information__image--top
+                            img(src="src/blocks/information/assets/img/information-image-1.png" alt="How we help").information__image.information__image--top
                     .col-lg-6
                         .information__content
                             .information__content-heading
@@ -32,8 +32,8 @@ block content
                                     span Lorem ipsum dolor sit amet. Ut dignissim facilisis sodales. Integer vehicula nulla felis, id egest egestas lorem.
                             .information-button.information-button--offset
                                 a(href="#").link-black Learn more
-                                    a(href="#").link-black Directory
-                                    a(href="#").button.button__green-gradient Book Consultation
+                                a(href="#").link-black Directory
+                                a(href="#").button.button__green-gradient Book Consultation
 
         include ../blocks/benefits/benefits
         include ../blocks/counseling/counseling

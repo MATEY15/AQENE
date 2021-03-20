@@ -8,7 +8,8 @@
     @include font-size(30px, 54px, 414px, 1800px);
     @include line-height(34px, 60px, 414px, 1800px);
     color: #153257;
-    p {
+    span {
+      display: block;
       @include font-size(28px, 44px, 414px, 1800px);
     }
   }

@@ -20,21 +20,9 @@ block content
                         .box-form__head.box-form__head--text-center
                             h3 1. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex?
                         .box-form__inside
-                            label.radio-button.radio-button--full-style
-                                input.radio-button__input(type="radio" name="radio" checked="checked")
-                                .radio-button__text
-                                    .radio-button__status
-                                    p Option 1. Lorem ipsum dolor sit amet, consectetur adipicing.
-                            label.radio-button.radio-button--full-style
-                                input.radio-button__input(type="radio" name="radio" )
-                                .radio-button__text
-                                    .radio-button__status
-                                    p Option 2. Lorem ipsum dolor sit amet, consectetur adipicing.
-                            label.radio-button.radio-button--full-style
-                                input.radio-button__input(type="radio" name="radio" )
-                                .radio-button__text
-                                    .radio-button__status
-                                    p Option 3. Lorem ipsum dolor sit amet, consectetur adipicing.
+                            +radioInput(true, "Option 1. Lorem ipsum dolor sit amet, consectetur adipicing.")
+                            +radioInput("", "Option 2. Lorem ipsum dolor sit amet, consectetur adipicing.")
+                            +radioInput("", "Option 3. Lorem ipsum dolor sit amet, consectetur adipicing.")
                     .form-step__item
                         .box-form__head.box-form__head--text-center
                             h3 2. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex?

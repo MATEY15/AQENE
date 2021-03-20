@@ -120,13 +120,35 @@
   color: #153257;
   height: 50px;
   width: 50px;
+
+  & .output {
+    color: #A1ADBC;
+    pointer-events: none;
+  }
+
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    @include brr(50%);
+    margin: auto;
+    cursor: pointer;
+    user-select: none;
+    @include trn(.2s);
+    &.active {
+      background: #4637A5;
+      color: #fff;
+    }
+  }
 }
 
 //#calendar tbody td:nth-child(n+6),
 //#calendar .holiday {
 //  color: #A1ADBC;
 //}
-#calendar tbody td.today span {
+#calendar tbody td .current {
   display: flex;
   align-items: center;
   justify-content: center;

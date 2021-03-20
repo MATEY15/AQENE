@@ -21,6 +21,10 @@
     }
   }
 
+  &__tabs {
+    margin-bottom: 30px;
+  }
+
   .sub-title {
 
   }
@@ -39,6 +43,7 @@
     @include table-large-screen {
       margin-bottom: 25px;
       max-width: 100%;
+      display: none;
     }
   }
 
@@ -112,4 +117,34 @@
     max-width: 920px;
   }
 
+}
+
+.faq__tabs-item {
+  font-family: HelveticaNeueLTPro-Md, sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  color: #153257;
+  background: #fff;
+  box-shadow: 0 20px 30px rgba(31, 57, 63, .1);
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+  padding: 25px 30px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  transition: all .2s ease-out;
+  display: none;
+
+  @include table-large-screen {
+    display: block;
+  }
+
+  &--active {
+    .faq__list-icon:after {
+      background: #4637a5;
+    }
+    .faq__list-icon:before {
+      display: none;
+    }
+  }
 }

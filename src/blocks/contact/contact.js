@@ -5,11 +5,12 @@ function checkContactContent() {
         let elements = $('.contact__boxes').children();
         $(this).data('name', currentText).text(editText);
 
-        for(let item of elements) {
-            if($(item).is(":hidden")) {
-                $(item).slideToggle(200);
+        for(var i = 0; i < elements.length; i++) {
+            console.log($(elements[i]))
+            if($(elements[i]).css('display') !== 'none') {
+                $(elements[i]).slideToggle(200);
             } else {
-                $(item).slideToggle(200);
+                $(elements[i]).slideToggle(200);
             }
         }
     })

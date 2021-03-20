@@ -12,6 +12,13 @@
   opacity: 0;
   visibility: hidden;
   @include trn(.2s);
+  
+  @include laptop-small-screen {
+    left: 0;
+    top: calc(100% + 20px);
+    padding-left: 0;
+    background: #fff;
+  }
 
 
   &__layout {

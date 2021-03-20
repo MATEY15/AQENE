@@ -36,11 +36,13 @@
     padding-bottom: 30px;
     min-height: 120px;
     transition: all .25s ease-out;
+
     #{$scroll} & {
       padding-top: 10px;
       padding-bottom: 10px;
       min-height: 80px;
     }
+
     @include table-large-screen {
       padding-top: 24px;
       padding-bottom: 24px;
@@ -55,6 +57,11 @@
   &__logo {
     position: absolute;
     left: -165px;
+    top: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
     @include laptop-big-screen {
       position: static;
       margin-right: 90px;
@@ -69,6 +76,15 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    min-width: 52px;
+
+    //@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    //  &:after {
+    //    content: '';
+    //    min-height: inherit;
+    //    font-size: 0;
+    //  }
+    //}
 
     @include table-large-screen {
       justify-content: flex-end;
@@ -94,7 +110,7 @@
       justify-content: center;
       align-items: flex-end;
       background: var(--purple-color);
-      box-shadow: 0 10px 60px rgba(0,0,0,.1) inset;
+      box-shadow: 0 10px 60px rgba(0, 0, 0, .1) inset;
       padding: 50px 15px;
       opacity: 0;
       visibility: hidden;
@@ -136,6 +152,7 @@
         font-size: 38px;
         line-height: 38px;
       }
+
       &:hover {
         opacity: .6;
       }
@@ -173,6 +190,7 @@
       &:not(:last-child) {
         margin-right: 40px;
       }
+
       @include mobile-small-screen {
         padding: 6px 12px 7px;
       }

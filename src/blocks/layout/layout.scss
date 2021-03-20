@@ -11,4 +11,14 @@
       max-width: 1432px !important;
     }
   }
+
+
+
+  .row>* {
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+  }
 }

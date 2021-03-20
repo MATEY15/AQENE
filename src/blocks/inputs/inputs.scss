@@ -237,8 +237,8 @@
       margin-bottom: 20px;
     }
 
-    .button {
-      margin: 10px;
+    .button__social:not(:last-child) {
+      margin-right: 10px;
 
       @include mobile-small-screen {
         margin: 10px;
